@@ -24,7 +24,7 @@ Return
  */
 
 @SuppressWarnings("unused")
-public class PascalTree {
+public class PascalTriangle {
 
     public ArrayList<ArrayList<Integer>> generate(int numRows) {
         if (numRows < 0) {
@@ -60,4 +60,5 @@ public class PascalTree {
     public static void main (String[] args) {
 
     }
+
 }
