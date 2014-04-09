@@ -33,6 +33,10 @@ public class WordLadder {
     All words have the same length.
     All words contain only lowercase alphabetic characters.
      */
+
+    /*
+    DFS does not work fast enough!!!
+     */
     public ArrayList<ArrayList<String>> findLadders(String start, String end, HashSet<String> dict) {
 
         if (start == null || end == null || dict == null) {
@@ -45,19 +49,34 @@ public class WordLadder {
 
         this.dict = dict;
         this.maxDepth = dict.size();
+        return bfs(start.trim().toLowerCase(), end.trim().toLowerCase());
+    }
+
+
+    private ArrayList<ArrayList<String>> bfs(String start, String end) {
+        ArrayList<ArrayList<String>> result = new ArrayList<ArrayList<String>>();
+
+        Stack<String> stack = new Stack<String>();
+//        bfsHorizontal(start.trim().toLowerCase(), end.trim().toLowerCase(),                stack,
+//                result);
+
+        return result;
+    }
+
+    private ArrayList<ArrayList<String>> dfs(String start, String end) {
         ArrayList<ArrayList<String>> result = new
                 ArrayList<ArrayList<String>>();
 
         Stack<String> stack = new Stack<String>();
-        searchHorizontal(start.trim().toLowerCase(), end.trim().toLowerCase(), stack,
+        dfsHorizontal(start.trim().toLowerCase(), end.trim().toLowerCase(), stack,
                 result);
 
         return result;
     }
 
-    private void searchHorizontal(String current, String end,
-                                  Stack<String> stack,
-                                  ArrayList<ArrayList<String>> results) {
+    private void dfsHorizontal(String current, String end,
+                               Stack<String> stack,
+                               ArrayList<ArrayList<String>> results) {
 
         for (int i = 0; i < current.length(); i++) {
             String next;
@@ -67,16 +86,16 @@ public class WordLadder {
                 next = new String(chars);
                 if (dict.contains(next) && !stack.contains(next)) {
                     stack.push(next);
-                    searchVertical(end, stack, results);
+                    dfsVertical(end, stack, results);
                     stack.pop();
                 }
             }
         }
     }
 
-    private void searchVertical(String end,
-                                Stack<String> stack,
-                                ArrayList<ArrayList<String>> results) {
+    private void dfsVertical(String end,
+                             Stack<String> stack,
+                             ArrayList<ArrayList<String>> results) {
         if (stack.size() > maxDepth || stack.size() == 0) {
             // skip some useless path
             return;
@@ -100,9 +119,19 @@ public class WordLadder {
             }
 
             // searching horizontal in the new depth.
-            searchHorizontal(stack.peek(), end, stack, results);
+            dfsHorizontal(stack.peek(), end, stack, results);
 
         }
+    }
+
+    private void bfsHorizontal(String end, Stack<String> stack,
+                               ArrayList<ArrayList<String>> results) {
+
+    }
+
+    private void bfsVertical(String end, Stack<String> stack,
+                             ArrayList<ArrayList<String>> results) {
+
     }
 
     private boolean isTheEnd(String current, String target) {
