@@ -1,4 +1,4 @@
-package hongke.interview.leetcode.common;
+package hongke.interview.leetcode.questions;
 
 /*
  * Created by hongke on 3/9/14.

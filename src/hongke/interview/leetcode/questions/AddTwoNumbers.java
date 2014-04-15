@@ -1,7 +1,6 @@
 package hongke.interview.leetcode.questions;
 
 import hongke.interview.leetcode.common.ListNode;
-import sun.jvm.hotspot.ci.ciObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
