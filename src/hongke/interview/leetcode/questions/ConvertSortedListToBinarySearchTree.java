@@ -69,5 +69,6 @@ public class ConvertSortedListToBinarySearchTree {
     		}
     	}
     	test.sortedListToBST(head);
+    	System.out.println("done");
     }
 }
