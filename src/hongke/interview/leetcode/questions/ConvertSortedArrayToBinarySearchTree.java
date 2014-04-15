@@ -33,14 +33,14 @@ public class ConvertSortedArrayToBinarySearchTree {
 
         int[] test3 = new int[]{0, 1};
         TreeNode result3 = test.sortedArrayToBST(test3);
-        System.out.println(result3);
+        TreeNode.printPretty(result3);
 
         int[] test1 = new int[]{0, 1, 2, 3, 4, 5, 6};
         TreeNode result1 = test.sortedArrayToBST(test1);
-        System.out.println(result1);
+        TreeNode.printPretty(result1);
 
         int[] test2 = new int[]{0, 1, 2, 3, 4, 5};
         TreeNode result2 = test.sortedArrayToBST(test2);
-        System.out.println(result2);
+        TreeNode.printPretty(result2);
     }
 }

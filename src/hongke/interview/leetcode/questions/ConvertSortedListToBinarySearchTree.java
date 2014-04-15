@@ -3,6 +3,8 @@ package hongke.interview.leetcode.questions;
 import hongke.interview.leetcode.common.ListNode;
 import hongke.interview.leetcode.common.TreeNode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 
 /**
@@ -14,61 +16,69 @@ public class ConvertSortedListToBinarySearchTree {
             return null;
         }
 
-        int depth = depth(head);
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        ListNode num = head;
-        TreeNode root = new TreeNode(0), cur = root;
-        while (num != null) {
-        	if (stack.size() <= depth) {
-        		// create empty tree nodes, will assign value later.
-        		stack.push(cur);
-        		cur.left = new TreeNode(0);
-        		cur = cur.left;
-        	} else {
-        		cur = stack.pop();
-        		visit(cur, head);
-        		cur.right = new TreeNode(0);
-        		cur = cur.right;
-        	}
+        int count = count(head);
+        TreeNode root = createTree(count);
+        assignValues (root, head);
+        return root;
+    }
+
+    private TreeNode createTree(int count) {
+        Deque<TreeNode> queue = new ArrayDeque<TreeNode>();
+        TreeNode root = new TreeNode(0);
+        count --;
+        queue.push(root);
+        while (count > 0) {
+            TreeNode node = queue.removeFirst();
+            if (count > 0) {
+                node.left = new TreeNode(0);
+                queue.addLast(node.left);
+                count --;
+            }
+            if (count > 0) {
+                node.right = new TreeNode(0);
+                queue.addLast(node.right);
+                count --;
+            }
         }
         return root;
     }
 
-    private int depth(ListNode head) {
+    private void assignValues(TreeNode root, ListNode head) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode cur = root;
+        ListNode num = head;
+        while (!stack.isEmpty() || cur != null) {
+            if (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
+            } else {
+                cur = stack.pop();
+                cur.val = num.val;
+                num = num.next;
+                cur = cur.right;
+            }
+        }
+    }
+
+    private int count(ListNode head) {
         int count = 0;
         ListNode cur = head;
         while (cur != null) {
             cur = cur.next;
             count ++;
         }
-
-        int height = 0;
-        while ((count = count / 2) != 0) {
-            height ++;
-        }
-
-        return height;
-    }
-    
-    private TreeNode visit(TreeNode node, ListNode head) {
-    	node.val = head.val;
-    	head = head.next;
-    	return node;
+        return count;
     }
 
     public static void main(String[] args) {
     	ConvertSortedListToBinarySearchTree test = new ConvertSortedListToBinarySearchTree();
-    	int[] test1 = new int[] {0,1,2,3,4,5,6};
-    	ListNode head = new ListNode(0);
-    	ListNode point = head;
-    	for (int i = 0; i < test1.length; i++) {
-    		point.val = i;
-    		if (i + 1 < test1.length) {
-    			point.next = new ListNode(0);
-    			point = point.next;
-    		}
-    	}
-    	test.sortedListToBST(head);
-    	System.out.println("done");
+    	ListNode head1 = ListNode.createLinkedList(new int[] {0,1,2,3,4,5,6,7,8
+        ,9,10,11,12,13});
+    	TreeNode result1 = test.sortedListToBST(head1);
+    	TreeNode.printPretty(result1);
+
+        ListNode head2 = ListNode.createLinkedList(new int[] {0});
+        TreeNode result2 = test.sortedListToBST(head2);
+        TreeNode.printPretty(result2);
     }
 }
