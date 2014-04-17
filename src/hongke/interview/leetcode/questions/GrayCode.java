@@ -1,7 +1,7 @@
 package hongke.interview.leetcode.questions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by hongke on 4/14/14.
@@ -9,20 +9,15 @@ import java.util.Arrays;
 public class GrayCode {
     public ArrayList<Integer> grayCode(int n) {
         if (n == 0) {
-            return new ArrayList();
+            return new ArrayList<Integer>();
         }
 
         ArrayList<Integer> results = new ArrayList<Integer>();
-        int [] bits = new int[2 * n];
-        Arrays.fill(bits, 0, n - 1, 0);
-        Arrays.fill(bits, n, 2 * n , 1);
-        for (int offset = 0; offset < 2 * n; offset ++) {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < n; i ++) {
-                sb.append(bits[(offset + i) % (2 * n)]);
-            }
-            results.add(Integer.parseInt(sb.toString(),2));
-
+        List<String> codes = new ArrayList<String>();
+        codes.add("0");
+        codes.add("1");
+        for (int digit = 0; digit < n; digit ++) {
+        	
         }
         return results;
     }
