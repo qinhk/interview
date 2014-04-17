@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="296774aa-4838-4dd3-879a-f00eea8c714b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/CopyListWithRandomPointer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/CountAndSay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/DecodeWays.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/common/RandomListNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="296774aa-4838-4dd3-879a-f00eea8c714b" name="Default" comment="" />
     <ignored path="interview.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -223,7 +217,7 @@
       <file leaf-file-name="DecodeWays.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/DecodeWays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.055452865" vertical-offset="120" max-vertical-offset="840">
+            <state line="10" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.085027725" vertical-offset="104" max-vertical-offset="840">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,10 +237,10 @@
       <file leaf-file-name="GrayCode.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/GrayCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="55" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="660">
+            <state line="30" column="9" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="585">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#332#341#0" expanded="true" />
+                <element signature="e#339#348#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -975,10 +969,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/GrayCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="55" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="660">
+        <state line="30" column="9" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="585">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#332#341#0" expanded="true" />
+            <element signature="e#339#348#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1051,7 +1045,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/DecodeWays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.055452865" vertical-offset="120" max-vertical-offset="840">
+        <state line="10" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.085027725" vertical-offset="104" max-vertical-offset="840">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
