@@ -5,7 +5,6 @@ import java.math.BigInteger;
 /**
  * Created by hongke on 4/6/14.
  */
-@SuppressWarnings("unused")
 public class AddBinary {
     public String addBinary(String a, String b) {
         if (a == null || b == null || !a.contains("1") || !b.contains("1")) {

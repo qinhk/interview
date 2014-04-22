@@ -56,9 +56,9 @@ public class ConstructBinaryTree {
         }
         return root;
     }
-
-    private TreeNode preOrder(int[] values) {
-        return null;
-    }
+//
+//    private TreeNode preOrder(int[] values) {
+//        return null;
+//    }
 
 }

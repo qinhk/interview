@@ -23,7 +23,6 @@ Return
 ]
  */
 
-@SuppressWarnings("unused")
 public class PascalTriangle {
 
     public ArrayList<ArrayList<Integer>> generate(int numRows) {
@@ -33,7 +32,7 @@ public class PascalTriangle {
             return new ArrayList<ArrayList<Integer>>();
         }
 
-        ArrayList<ArrayList<Integer>> result = new ArrayList();
+        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
 
         recursiveGenerateTree(numRows, result);
         return result;
@@ -43,7 +42,7 @@ public class PascalTriangle {
                                        ArrayList<ArrayList<Integer>> result) {
 
         if (numRows == 1) {
-            result.add(new ArrayList(Arrays.asList(new int[]{1})));
+            result.add(new ArrayList<Integer>(Arrays.asList(new Integer[]{1})));
         } else {
             recursiveGenerateTree(numRows - 1, result);
             ArrayList<Integer> current = new ArrayList<Integer>();

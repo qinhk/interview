@@ -3,7 +3,6 @@ package hongke.interview.leetcode.questions;
 /**
  * Created by hongke on 4/9/14.
  */
-@SuppressWarnings("unused")
 public class Candy {
     public int candy(int[] ratings) {
         if (ratings == null || ratings.length == 0) {

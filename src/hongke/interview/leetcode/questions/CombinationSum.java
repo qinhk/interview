@@ -11,7 +11,7 @@ public class CombinationSum {
 
     public ArrayList<ArrayList<Integer>> combinationSum(int[] candidates, int target) {
         if (target <= 0 || candidates == null || candidates.length == 0 ) {
-            return new ArrayList();
+            return new ArrayList<ArrayList<Integer>>();
         }
 
         results = new HashSet<ArrayList<Integer>>();

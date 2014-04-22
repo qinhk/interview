@@ -12,7 +12,7 @@ public class Combinations {
 
     public ArrayList<ArrayList<Integer>> combine(int n, int k) {
         if (n <= 0 || k <= 0) {
-            return new ArrayList();
+            return new ArrayList<ArrayList<Integer>>();
         }
 
         results = new ArrayList<ArrayList<Integer>>();

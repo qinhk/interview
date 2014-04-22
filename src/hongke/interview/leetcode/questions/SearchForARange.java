@@ -16,7 +16,6 @@ package hongke.interview.leetcode.questions;
  * http://oj.leetcode.com/problems/search-for-a-range/
  */
 
-@SuppressWarnings("unused")
 public class SearchForARange {
     public int[] searchRange(int[] A, int target) {
         if (A == null || A.length == 0 ||

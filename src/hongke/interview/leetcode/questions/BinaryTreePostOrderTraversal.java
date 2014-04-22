@@ -24,7 +24,6 @@ import java.util.Stack;
  * the order where the current node can only be deleted when both of its left
  * and right subtrees are deleted.
  */
-@SuppressWarnings("unused")
 public class BinaryTreePostOrderTraversal {
 
     public ArrayList<Integer> postOrderTraversal(TreeNode root) {

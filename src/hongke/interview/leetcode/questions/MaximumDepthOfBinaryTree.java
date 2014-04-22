@@ -20,7 +20,6 @@ import java.util.Stack;
  * The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
  */
 
-@SuppressWarnings("unused")
 public class MaximumDepthOfBinaryTree {
 
     public int mexDepth(TreeNode root) {

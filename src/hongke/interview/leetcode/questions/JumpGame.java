@@ -3,7 +3,6 @@ package hongke.interview.leetcode.questions;
 /**
  * Created by hongke on 3/11/14.
  */
-@SuppressWarnings("unused")
 public class JumpGame {
     /*
     Given an array of non-negative integers, you are initially positioned at the first index of the array.
