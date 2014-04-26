@@ -21,10 +21,30 @@ public class ThreeSumCloest {
 		Arrays.sort(num);
 		int result = Integer.MAX_VALUE;
 		for (int i = 0; i < num.length; i ++) {
-			for (int j = 0, k = num.length; j != k;) {
-				
+			for (int j = i + 1, k = num.length - 1; j < num.length && j != k;) {
+				int sum = num[i] + num[j] + num[k];
+				result = abs(target - sum) < abs(target - result) ? sum : result;
+				if (sum < target) {
+					j ++;
+				} else if (sum > target) {
+					k --;
+				} else {
+					return sum;
+				}
 			}
 		}
 		return result;
+	}
+	
+	private int abs (int value) {
+		if (value == Integer.MIN_VALUE) {
+			return Integer.MAX_VALUE;
+		}
+		return Math.abs(value);
+	}
+	
+	public static void main(String[] args) {
+		ThreeSumCloest test = new ThreeSumCloest();
+		System.out.println(test.threeSumClosest(new int[] {-3,-2,-5,3,-4}, -1));
 	}
 }
