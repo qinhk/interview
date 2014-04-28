@@ -13,36 +13,60 @@ package hongke.interview.leetcode.questions;
 
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class InterleavingString {
 
-	public boolean isInterleave(String s1, String s2, String s3) {
-		if (s1 == null || s1.length() == 0) {
-			return s2.equals(s3);
-		} else if (s2 == null || s2.length() == 0) {
-			return s1.equals(s3);
-		} else if (s3.length() != s1.length() + s2.length()) {
-			return false;
-		}
+    public boolean isInterleave(String s1, String s2, String s3) {
+        if (s1 == null || s1.length() == 0) {
+            return s2.equals(s3);
+        } else if (s2 == null || s2.length() == 0) {
+            return s1.equals(s3);
+        } else if (s3.length() != s1.length() + s2.length()) {
+            return false;
+        }
 
-		int index1 = 0, index2 = 0;
-		for (int i = 0; i < s3.length(); i++) {
-			if (index1 < s1.length()
-					&& Character.compare(s3.charAt(i), s1.charAt(index1)) == 0) {
-				index1 ++;
-			} else if (index2 < s2.length()
-					&& Character.compare(s3.charAt(i), s2.charAt(index2)) == 0) {
-				index2 ++;
-			} else {
-				return false;
-			}
-		}
-		return true;
-	}
+        List<Character> a3 = new ArrayList<Character>();
+        for (Character c : s3.toCharArray()) {
+            a3.add(c);
+        }
 
-	public static void main(String[] args) {
-		InterleavingString test = new InterleavingString();
-		System.out.println(test.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
-		System.out.println(test.isInterleave("aabcc", "dbbca", "aadbbbaccc"));
-	}
+        for (int i = a3.size() - 1, j = s2.length() - 1; j >= 0 && i >= 0; i --) {
+            if (a3.get(i) == s2.charAt(j)) {
+                a3.remove(i);
+                j --;
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (Character c : a3) {
+            sb.append(c);
+        }
+
+        return s1.equals(sb.toString());
+    }
+
+    public static void main(String[] args) {
+        InterleavingString test = new InterleavingString();
+        System.out.println(test.isInterleave("acca", "abba", "acabbaca")); //T
+        System.out.println(test.isInterleave("ac", "ab", "acab")); //T
+        System.out.println(test.isInterleave("ac", "ab", "abac")); //T
+        System.out.println(test.isInterleave("aabd", "abdc", "aabdabcd")); //T
+        System.out.println(test.isInterleave("aabd", "abdc", "aabdbadc")); //F
+        System.out.println(test.isInterleave("aa", "ab", "aaba")); //T
+        System.out.println(test.isInterleave("aa", "ab", "abaa")); //T
+        System.out.println(test.isInterleave("aabcc", "dbbca", "aadbbcbcac")); //T
+        System.out.println(test.isInterleave("aabcc", "dbbca", "aadbbbaccc")); //F
+        System.out.println(test.isInterleave("aa", "ab", "baaa")); //F
+        System.out.println(test.isInterleave("aa", "ab", "aaab")); //T
+        System.out.println(test.isInterleave("ac", "ab", "aabc")); //T
+        System.out.println(test.isInterleave("ac", "ab", "aacb")); //T
+        System.out.println(test.isInterleave("aa", "aa", "aaaa")); //T
+        System.out.println(test.isInterleave("ca", "ba", "bcaa")); //T
+        System.out.println(test.isInterleave("ca", "ba", "cbaa")); //T
+        System.out.println(test.isInterleave("ca", "ba", "caba")); //T
+
+    }
 
 }
