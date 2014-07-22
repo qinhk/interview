@@ -35,4 +35,8 @@ public class ListNode {
         }
         return head;
     }
+
+    public static void prettyPrint(ListNode node) {
+        System.out.println(node.toString());
+    }
 }
