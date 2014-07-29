@@ -29,7 +29,6 @@ public class SudokuSolver {
         for (int i = 1; i <= 9; i++) {
             board[y][x] = Integer.toString(i).charAt(0);
             if (isRowValid(board, y) && isColumnValid(board, x) && isGridValid(board, x, y)) {
-                prettyPrint(board);
                 if (x == 8 && y == 8) {
                     return true;
                 }
@@ -39,6 +38,9 @@ public class SudokuSolver {
                 }
             }
         }
+
+        // recover the status
+        board[y][x] = '.';
         return false;
     }
 
@@ -108,8 +110,10 @@ public class SudokuSolver {
     }
 
     public static void prettyPrint(char[][] board) {
+        System.out.println();
         for (char[] c : board) {
             System.out.println(Arrays.toString(c));
         }
+        System.out.println();
     }
 }
