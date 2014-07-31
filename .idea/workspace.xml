@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="296774aa-4838-4dd3-879a-f00eea8c714b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortColors.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrixII.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SingleNumberII.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrix.java" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrix.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="interview.iws" />
@@ -409,14 +409,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpiralMatrix.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SpiralMatrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="0" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.54372627" vertical-offset="1199" max-vertical-offset="1725">
+            <state line="55" column="40" selection-start="1555" selection-end="1555" vertical-scroll-proportion="-31.73077" vertical-offset="0" max-vertical-offset="2085">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#434#443#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleNumberII.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SingleNumberII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="117" selection-end="1045" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="960">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="29" selection-start="576" selection-end="576" vertical-scroll-proportion="0.03420523" vertical-offset="328" max-vertical-offset="1140">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#533#543#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SudokuSolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SudokuSolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1875">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1259#1270#0" expanded="true" />
+                <element signature="e#1693#1704#0" expanded="true" />
+                <element signature="e#2136#2147#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberFormatException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="750">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -443,8 +487,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/common/RandomListNode.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/CopyListWithRandomPointer.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/CountAndSay.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/DecodeWays.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/DistinctSubsequence.java" />
@@ -494,6 +536,8 @@
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Subsets.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrixII.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrix.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SingleNumberII.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java" />
       </list>
     </option>
   </component>
@@ -698,45 +742,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.SpiralMatrix">
-    <configuration default="false" name="Subsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.Subsets" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="interview" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="StringToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.StringToInteger" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="interview" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.SortList">
     <configuration default="false" name="SquareRoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SquareRoot" />
       <option name="VM_PARAMETERS" />
@@ -777,6 +783,50 @@
     </configuration>
     <configuration default="false" name="SpiralMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SpiralMatrix" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="interview" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SingleNumberII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SingleNumberII" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="interview" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SortList" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -925,19 +975,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Subsets" />
-      <item index="1" class="java.lang.String" itemvalue="Application.StringToInteger" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SquareRoot" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SortColors" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SpiralMatrix" />
+      <item index="0" class="java.lang.String" itemvalue="Application.SquareRoot" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SortColors" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SpiralMatrix" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SingleNumberII" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SortList" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SpiralMatrix" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SortColors" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SquareRoot" />
-        <item index="3" class="java.lang.String" itemvalue="Application.StringToInteger" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Subsets" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SortList" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SingleNumberII" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SpiralMatrix" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SortColors" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SquareRoot" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -980,12 +1030,13 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30120483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30120483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32409638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32409638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -995,7 +1046,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31084338" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1046,27 +1096,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/BalancedBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="49" selection-start="3841" selection-end="4584" vertical-scroll-proportion="0.0" vertical-offset="1877" max-vertical-offset="2370">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/DistinctSubsequences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="7" selection-start="4564" selection-end="15546" vertical-scroll-proportion="0.0" vertical-offset="1790" max-vertical-offset="2280">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/EvaluateReversePolishNotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="157" selection-end="1359" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/FlattenBinaryTreeToLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="1365">
@@ -1354,18 +1383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SudokuSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="189" selection-end="2573" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="1875">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1259#1270#0" expanded="true" />
-            <element signature="e#1693#1704#0" expanded="true" />
-            <element signature="e#2136#2147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3103" column="0" selection-start="122710" selection-end="122710" vertical-scroll-proportion="0.8255814" vertical-offset="45624" max-vertical-offset="46140">
@@ -1452,10 +1469,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.54372627" vertical-offset="1199" max-vertical-offset="1725">
+        <state line="55" column="40" selection-start="1555" selection-end="1555" vertical-scroll-proportion="-31.73077" vertical-offset="0" max-vertical-offset="2085">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#434#443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SudokuSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1875">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1259#1270#0" expanded="true" />
+            <element signature="e#1693#1704#0" expanded="true" />
+            <element signature="e#2136#2147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SingleNumberII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="117" selection-end="1045" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="576" selection-end="576" vertical-scroll-proportion="0.03420523" vertical-offset="328" max-vertical-offset="1140">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#533#543#0" expanded="true" />
           </folding>
         </state>
       </provider>

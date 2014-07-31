@@ -6,9 +6,9 @@ import java.util.List;
 /**
  * Created by hongke on 7/30/14.
  * <p/>
- * - - |
+ * - - -
  * | - |
- * | - -
+ * - - -
  */
 public class SpiralMatrix {
     public List<Integer> spiralOrder(int[][] matrix) {
@@ -17,39 +17,35 @@ public class SpiralMatrix {
         }
 
         List<Integer> result = new ArrayList<Integer>();
-        int width = matrix[0].length, height = matrix.length, count = width * height;
-        int layer = 0;
+        int width = matrix[0].length, height = matrix.length, count = width * height, layer = 0;
         while (count > 0) {
             // top
-            for (int i = layer; count > 0 && i < width - layer; i++) {
+            for (int i = layer; count > 0 && i <= width - layer - 1; i++) {
                 result.add(matrix[layer][i]);
                 count --;
             }
 
             // right
-            for (int i = layer; count > 0 && i < height - layer; i++) {
+            for (int i = layer + 1; count > 0 && i < height - layer - 1; i++) {
                 result.add(matrix[i][width - layer - 1]);
                 count --;
             }
 
             // bottom
             for (int i = width - layer - 1; count > 0 && i >= layer; i--) {
-                result.add(matrix[width - layer - 1][i]);
+                result.add(matrix[height - layer - 1][i]);
                 count --;
             }
 
             // left
-            for (int i = height - layer - 1; count > 0 && i >= layer; i--) {
+            for (int i = height - layer - 2; count > 0 && i > layer; i--) {
                 result.add(matrix[i][layer]);
                 count --;
             }
+
+            layer ++;
         }
 
-//        // middle
-//        if (scale % 2 != 0) {
-//            int middle = matrix.length / 2;
-//            result.add(matrix[middle][middle]);
-//        }
         return result;
     }
 
@@ -57,11 +53,13 @@ public class SpiralMatrix {
         SpiralMatrix test = new SpiralMatrix();
         int[][] input;
 
+        System.out.println(0 ^ 3 ^ 3 ^ 4);
+
 
         input = new int[][] {
             {1}
         };
-        System.out.println(test.spiralOrder(input));
+       System.out.println(test.spiralOrder(input));
 
 
         input = new int[][] {
@@ -71,9 +69,10 @@ public class SpiralMatrix {
         System.out.println(test.spiralOrder(input));
 
         input = new int[][] {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+            {1,  2,  3},
+            {4,  5,  6},
+            {7,  8,  9},
+            {10, 11, 12}
         };
         System.out.println(test.spiralOrder(input));
 
@@ -86,8 +85,8 @@ public class SpiralMatrix {
         System.out.println(test.spiralOrder(input));
 
         input = new int[][] {
-            {1, 2, 3, 4, 5},
-            {6, 7, 8, 9, 10},
+            {1,  2,  3,  4,  5 },
+            {6,  7,  8,  9,  10},
             {11, 12, 13, 14, 15},
             {16, 17, 18, 19, 20},
             {21, 22, 23, 24, 25}
@@ -102,6 +101,31 @@ public class SpiralMatrix {
         input = new int[][] {
             {3},
             {2}
+        };
+        System.out.println(test.spiralOrder(input));
+
+        input = new int[][] {
+            {2,3,4}
+        };
+        System.out.println(test.spiralOrder(input));
+
+        input = new int[][] {
+            {3},
+            {2},
+            {1}
+        };
+        System.out.println(test.spiralOrder(input));
+
+        input = new int[][] {
+            {2,3,4},
+            {5,6,7}
+        };
+        System.out.println(test.spiralOrder(input));
+
+        input = new int[][] {
+            {1,2},
+            {3,4},
+            {5,6}
         };
         System.out.println(test.spiralOrder(input));
     }
