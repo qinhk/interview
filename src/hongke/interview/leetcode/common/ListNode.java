@@ -1,5 +1,7 @@
 package hongke.interview.leetcode.common;
 
+import java.util.List;
+
 /**
  * Created by hongke on 4/6/14.
  */
@@ -36,7 +38,24 @@ public class ListNode {
         return head;
     }
 
+    public static ListNode createLinkedList(List<Integer> num) {
+        if (num == null || num.size() == 0)
+            return null;
+
+        ListNode head = new ListNode(num.get(0));
+        ListNode point = head;
+        for (int i = 1; i < num.size(); i++) {
+            point.next = new ListNode(num.get(i));
+            point = point.next;
+        }
+        return head;
+    }
+
     public static void prettyPrint(ListNode node) {
-        System.out.println(node.toString());
+        if (node != null) {
+            System.out.println(node.toString());
+        } else {
+            System.out.println("null");
+        }
     }
 }
