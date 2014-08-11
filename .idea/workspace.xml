@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="296774aa-4838-4dd3-879a-f00eea8c714b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchA2DMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArrayII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInsertPosition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SetMatrixZeroes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SimplifyPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/leetcode/common/ListNode.java" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/common/ListNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RemoveNthNodeFromEndOfList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseLinkedListII.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseNodesInKGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseWordsInAString.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RomanToInteger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ScrambleString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="interview.iws" />
@@ -397,6 +397,21 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RemoveNthNodeFromEndOfList.java" line="13" class="hongke.interview.leetcode.questions.RemoveNthNodeFromEndOfList" package="hongke.interview.leetcode.questions">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -407,82 +422,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SortColors.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortColors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="139" selection-end="997" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1095">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subsets.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Subsets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="16" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="1320">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpiralMatrix.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SpiralMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="40" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="2085">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleNumberII.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SingleNumberII.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="117" selection-end="1045" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="960">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SortList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="43" selection-start="2565" selection-end="2565" vertical-scroll-proportion="0.0" vertical-offset="1335" max-vertical-offset="2400">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchInsertPosition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInsertPosition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1080">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchInRotatedSortedArray.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="249" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1035">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchA2DMatrix.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SearchA2DMatrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchA2DMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.33266932" vertical-offset="313" max-vertical-offset="885">
+            <state line="32" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchInRotatedSortedArrayII.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArrayII.java">
+      <file leaf-file-name="ScrambleString.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ScrambleString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="130" selection-end="1460" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+            <state line="12" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1056#1067#0" expanded="true" />
+                <element signature="e#1186#1197#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotateList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="1" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotateImage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="113" selection-end="761" vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="1275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RomanToInteger.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RomanToInteger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="233" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReverseWordsInAString.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseWordsInAString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="148" selection-end="693" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="630">
+              <folding>
+                <element signature="e#363#371#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReverseNodesInKGroup.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseNodesInKGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="199" selection-end="1124" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="795">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#372#382#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReverseLinkedListII.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseLinkedListII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="173" selection-end="946" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoveNthNodeFromEndOfList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RemoveNthNodeFromEndOfList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="29" selection-start="511" selection-end="511" vertical-scroll-proportion="0.37883437" vertical-offset="38" max-vertical-offset="690">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Matrix.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="29" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -501,14 +534,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/FlattenBinaryTreeToLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/GasStation.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RomanNumber.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Strstr.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/FirstMissingPositive.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/InterleavingString.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/InsertionSortList.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/JumpGame.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LetterCombinationsOfPhoneNumbers.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LargestRectangleInHistogram.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RegularExpressionMatching.java" />
@@ -545,19 +570,27 @@
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SingleNumberII.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SimplifyPath.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/common/ListNode.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SetMatrixZeroes.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInsertPosition.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArray.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArrayII.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchA2DMatrix.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ScrambleString.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateList.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateImage.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RomanToInteger.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseWordsInAString.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseNodesInKGroup.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseLinkedListII.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RemoveNthNodeFromEndOfList.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -646,7 +679,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -733,6 +765,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -755,10 +788,44 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
-  <component name="RunManager" selected="Application.SearchA2DMatrix">
-    <configuration default="false" name="SortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SortList" />
+  <component name="RunManager" selected="Application.RemoveNthNodeFromEndOfList">
+    <configuration default="false" name="RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.RomanToInteger" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="interview" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReverseWordsInAString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.ReverseWordsInAString" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="interview" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReverseNodesInKGroup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.ReverseNodesInKGroup" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -779,8 +846,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="SearchInsertPosition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SearchInsertPosition" />
+    <configuration default="false" name="ReverseLinkedListII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.ReverseLinkedListII" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -796,13 +863,11 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="SearchInRotatedSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SearchInRotatedSortedArray" />
+    <configuration default="false" name="RemoveNthNodeFromEndOfList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.RemoveNthNodeFromEndOfList" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -818,53 +883,7 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SearchInRotatedSortedArrayII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SearchInRotatedSortedArrayII" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="interview" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SearchA2DMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.SearchA2DMatrix" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="interview" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -901,6 +920,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -926,19 +958,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -995,19 +1014,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.SortList" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SearchInsertPosition" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SearchInRotatedSortedArray" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SearchInRotatedSortedArrayII" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SearchA2DMatrix" />
+      <item index="0" class="java.lang.String" itemvalue="Application.RomanToInteger" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ReverseWordsInAString" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ReverseNodesInKGroup" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ReverseLinkedListII" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RemoveNthNodeFromEndOfList" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SearchA2DMatrix" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SearchInRotatedSortedArrayII" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SearchInRotatedSortedArray" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SearchInsertPosition" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SortList" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RemoveNthNodeFromEndOfList" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ReverseLinkedListII" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ReverseNodesInKGroup" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ReverseWordsInAString" />
+        <item index="4" class="java.lang.String" itemvalue="Application.RomanToInteger" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1042,7 +1061,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1051,23 +1070,23 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33373493" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30396038" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23962805" sideWeight="0.50090414" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1341853" sideWeight="0.50071126" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32409638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32277226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23962805" sideWeight="0.49909583" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3759036" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1341853" sideWeight="0.49928877" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45643565" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1086,13 +1105,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32650602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6688126" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33614457" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33614457" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1116,56 +1135,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/FirstMissingPositive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="36" selection-start="336" selection-end="336" vertical-scroll-proportion="0.32667875" vertical-offset="45" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Strstr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="111" selection-end="177" vertical-scroll-proportion="0.16333938" vertical-offset="0" max-vertical-offset="551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LargestRectangleInHistogram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="3" selection-start="0" selection-end="1157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RegularExpressionMatching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="2265">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ZigZagConversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="195" selection-end="1535" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="0" selection-start="4992" selection-end="4992" vertical-scroll-proportion="0.0" vertical-offset="1677" max-vertical-offset="11460" />
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="13" selection-start="1345" selection-end="1351" vertical-scroll-proportion="0.33333334" vertical-offset="289" max-vertical-offset="54840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/WordSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="21" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/WordLadder2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="0" selection-start="2310" selection-end="5303" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="1755">
@@ -1433,9 +1402,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="34" selection-start="903" selection-end="903" vertical-scroll-proportion="0.007561437" vertical-offset="461" max-vertical-offset="990">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#280#289#0" expanded="true" />
-            <element signature="e#338#347#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#280#289#0" expanded="false" />
+            <element signature="e#338#347#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1450,13 +1419,6 @@
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/common/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="47" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.375" vertical-offset="453" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="297" selection-end="297" vertical-scroll-proportion="0.29891303" vertical-offset="0" max-vertical-offset="552">
           <folding />
         </state>
       </provider>
@@ -1491,7 +1453,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchA2DMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.33266932" vertical-offset="313" max-vertical-offset="885">
+        <state line="32" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ScrambleString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1056#1067#0" expanded="true" />
+            <element signature="e#1186#1197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="1" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="113" selection-end="761" vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RomanToInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="233" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseWordsInAString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="148" selection-end="693" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="630">
+          <folding>
+            <element signature="e#363#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseNodesInKGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="199" selection-end="1124" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="795">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReverseLinkedListII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="173" selection-end="946" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RemoveNthNodeFromEndOfList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="29" selection-start="511" selection-end="511" vertical-scroll-proportion="0.37883437" vertical-offset="38" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
