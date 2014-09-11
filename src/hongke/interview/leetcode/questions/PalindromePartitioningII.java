@@ -10,43 +10,50 @@ public class PalindromePartitioningII {
         }
 
         int n = s.length();
-        int[] cuts = new int[n + 1];
-        for (int i = 0; i < n; i++) {
-            int alreadyCut = cuts[i];
-            for (int l = n - i; l > 0; l--) {
-                if (i != 0 && alreadyCut == 0) {
-                    continue;
+
+        // build table, n^2
+        int[][] cache = new int[n][n];
+        for (int i = 0;i < n; i ++) {
+            cache[0][i] = 1;
+        }
+        for (int i = 0;i < n - 1; i ++) {
+            if (s.charAt(i) == s.charAt(i + 1)) {
+                cache[1][i] = 1;
+            } else {
+                cache[1][i] = 0;
+            }
+        }
+
+        for (int i = 2; i < n; i ++) {
+            for (int j = 0; j < n - i; j ++) {
+                if (s.charAt(j) == s.charAt(j + i)) {
+                    cache[i][j] = cache[i - 2][j + 1];
+                } else {
+                    cache[i][j] = 0;
                 }
-                if (isPalindrome(s, i, l)) {
+            }
+        }
+
+        int[] cuts = new int[n];
+        for (int i = 0; i < n; i++) {
+            int cut = i > 0 ? cuts[i - 1] : 0;
+            for (int l = 0; l + i < n; l++) {
+                if (cache[l][i] == 1) {
                     if (cuts[i + l] == 0) {
-                        cuts[i + l] = alreadyCut + 1;
+                        cuts[i + l] = cut + 1;
                     } else {
-                        cuts[i + l] = Math.min(cuts[i + l], alreadyCut + 1);
+                        cuts[i + l] = Math.min(cuts[i + l], cut + 1);
                     }
                 }
             }
         }
-        return cuts[n] - 1;
-    }
-
-    private boolean isPalindrome(String s, int startIndex, int length) {
-        if (length == 1) {
-            return true;
-        }
-
-        int i = startIndex, j = startIndex + length - 1, k = 0;
-        while (i + k <= j - k) {
-            if (s.charAt(i + k) != s.charAt(j - k)) {
-                return false;
-            }
-            k++;
-        }
-        return true;
+        return cuts[n - 1] - 1;
     }
 
     public static void main(String[] args) {
         PalindromePartitioningII test = new PalindromePartitioningII();
 
+        System.out.println(test.minCut("aba"));
         System.out.println(test.minCut("aaabbaa"));
         System.out.println(test.minCut("ab"));
         System.out.println(test.minCut("aabb"));
