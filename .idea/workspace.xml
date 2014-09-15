@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="296774aa-4838-4dd3-879a-f00eea8c714b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/common/Interval.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestCommonPrefix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestConsecutiveSequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestValidParentheses.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MaximumSubarray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MedianOfTwoSortedArrays.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MergeInterval.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MergeKSortedLists.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MergeSortedArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MinimumDepthOfBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MinimumWindowSubstring.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/minPathSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/PalindromeNumber.java" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/PalindromeNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/PalindromePartitioningII.java" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/PalindromePartitioningII.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LRUCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestPalindromicSubstring.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestSubstringWithoutRepeatingCharacters.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/common/MaxPointsOnALine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MaximalRectangle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/common/Point.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/GrayCode.java" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/GrayCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LargestRectangleInHistogram.java" afterPath="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LargestRectangleInHistogram.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="interview.iws" />
@@ -522,6 +516,81 @@
         <option name="CONDITION" value="&#13;&#13;JAVA" />
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestPalindromicSubstring.java" line="24" class="hongke.interview.leetcode.questions.LongestPalindromicSubstring" package="hongke.interview.leetcode.questions">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestSubstringWithoutRepeatingCharacters.java" line="28" class="hongke.interview.leetcode.questions.LongestSubstringWithoutRepeatingCharacters" package="hongke.interview.leetcode.questions">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestSubstringWithoutRepeatingCharacters.java" line="16" class="hongke.interview.leetcode.questions.LongestSubstringWithoutRepeatingCharacters" package="hongke.interview.leetcode.questions">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MaximalRectangle.java" line="22" class="hongke.interview.leetcode.questions.MaximalRectangle" package="hongke.interview.leetcode.questions">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LRUCache.java" line="64" class="hongke.interview.leetcode.questions.LRUCache" package="hongke.interview.leetcode.questions">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -532,89 +601,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MinimumDepthOfBinaryTree.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MinimumDepthOfBinaryTree.java">
+      <file leaf-file-name="MaxPointsOnALine.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/common/MaxPointsOnALine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeInterval.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MergeInterval.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="5" selection-start="187" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="840">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeSortedArray.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MergeSortedArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="21" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeKSortedLists.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MergeKSortedLists.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="25" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaximumSubarray.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MaximumSubarray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="37" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="465">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MedianOfTwoSortedArrays.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MedianOfTwoSortedArrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="50" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="795">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LongestValidParentheses.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestValidParentheses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="23" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="840">
+            <state line="33" column="23" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="1155">
               <folding>
-                <element signature="e#319#330#0" expanded="true" />
-                <element signature="e#375#384#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#346#367#0" expanded="true" />
+                <element signature="e#1293#1308#0" expanded="true" />
+                <element signature="e#2260#2269#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LongestCommonPrefix.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestCommonPrefix.java">
+      <file leaf-file-name="LargestRectangleInHistogram.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LargestRectangleInHistogram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="60" selection-start="677" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <folding />
+            <state line="8" column="0" selection-start="154" selection-end="940" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+              <folding>
+                <element signature="e#351#360#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LongestConsecutiveSequence.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestConsecutiveSequence.java">
+      <file leaf-file-name="MaximalRectangle.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MaximalRectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1279" selection-end="2269" vertical-scroll-proportion="0.03508772" vertical-offset="597" max-vertical-offset="1425">
+            <state line="66" column="44" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1185">
+              <folding>
+                <element signature="e#1120#1129#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrayCode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/GrayCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="22" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="720">
+              <folding>
+                <element signature="e#364#372#0" expanded="true" />
+                <element signature="e#506#514#0" expanded="true" />
+                <element signature="e#822#831#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LRUCache.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LRUCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="34" selection-start="879" selection-end="879" vertical-scroll-proportion="-0.3" vertical-offset="705" max-vertical-offset="1245">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#389#407#0" expanded="true" />
-                <element signature="e#1463#1481#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -633,14 +674,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/common/ListNode.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SetMatrixZeroes.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SortList.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInsertPosition.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArray.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArrayII.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchA2DMatrix.java" />
-        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ScrambleString.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateList.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateImage.java" />
@@ -684,13 +717,21 @@
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestValidParentheses.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestCommonPrefix.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestConsecutiveSequence.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestPalindromicSubstring.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestSubstringWithoutRepeatingCharacters.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/common/Point.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/common/MaxPointsOnALine.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LargestRectangleInHistogram.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MaximalRectangle.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/GrayCode.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LRUCache.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1058" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -879,7 +920,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="new Class&#10;new c&#10;new Clas&#10;line&#10;Merge&#10;new Cla&#10;new C&#10;new class&#10;new cla&#10;(&#10;new clas&#10;New class" />
+    <property name="SearchEverywhereHistory" value="new class&#10;LRUCache&#10;largest&#10;new Clas&#10;new Class&#10;new c&#10;line&#10;Merge&#10;new Cla&#10;new C&#10;new cla&#10;(&#10;new clas&#10;New class" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -891,9 +932,9 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
-  <component name="RunManager" selected="Application.LongestConsecutiveSequence">
-    <configuration default="false" name="MergeSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.MergeSortedArray" />
+  <component name="RunManager" selected="Application.LRUCache">
+    <configuration default="false" name="MaxPointsOnALine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.common.MaxPointsOnALine" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -914,40 +955,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="MaximumSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.MaximumSubarray" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="interview" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MedianOfTwoSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.MedianOfTwoSortedArrays" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="interview" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="LongestValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.LongestValidParentheses" />
+    <configuration default="false" name="LargestRectangleInHistogram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.LargestRectangleInHistogram" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -968,8 +977,46 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="LongestConsecutiveSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.LongestConsecutiveSequence" />
+    <configuration default="false" name="MaximalRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.MaximalRectangle" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="interview" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GrayCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.GrayCode" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="interview" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.leetcode.questions.LRUCache" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1118,19 +1165,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MergeSortedArray" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MaximumSubarray" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MedianOfTwoSortedArrays" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LongestValidParentheses" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LongestConsecutiveSequence" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MaxPointsOnALine" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LargestRectangleInHistogram" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MaximalRectangle" />
+      <item index="3" class="java.lang.String" itemvalue="Application.GrayCode" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LRUCache" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LongestConsecutiveSequence" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LongestValidParentheses" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MedianOfTwoSortedArrays" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MaximumSubarray" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MergeSortedArray" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LRUCache" />
+        <item index="1" class="java.lang.String" itemvalue="Application.GrayCode" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MaximalRectangle" />
+        <item index="3" class="java.lang.String" itemvalue="Application.LargestRectangleInHistogram" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MaxPointsOnALine" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1165,7 +1212,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1058" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1174,18 +1221,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24534161" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37130177" sideWeight="0.50127226" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38612837" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38549617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17092651" sideWeight="0.49872774" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4026915" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49491096" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1218,78 +1265,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArrayII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="130" selection-end="1460" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchInRotatedSortedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="249" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/SearchA2DMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ScrambleString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RotateList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="1" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RomanToInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="233" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/common/ListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="297" selection-end="297" vertical-scroll-proportion="0.3317757" vertical-offset="128" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/ReorderList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="165" selection-end="1079" vertical-scroll-proportion="-0.031982943" vertical-offset="135" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RestoreIPAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="96" selection-end="96" vertical-scroll-proportion="0.06772009" vertical-offset="15" max-vertical-offset="1125">
-          <folding>
-            <element signature="e#461#469#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/RemoveNthNodeFromEndOfList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="180" selection-end="890" vertical-scroll-proportion="0.014227643" vertical-offset="113" max-vertical-offset="780">
@@ -1450,7 +1425,9 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2218" column="0" selection-start="96964" selection-end="96964" vertical-scroll-proportion="0.33182845" vertical-offset="32778" max-vertical-offset="54840" />
+        <state line="2218" column="0" selection-start="96964" selection-end="96964" vertical-scroll-proportion="0.33182845" vertical-offset="32778" max-vertical-offset="54840">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/PalindromePartitioningII.java">
@@ -1556,8 +1533,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="23" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="840">
           <folding>
-            <element signature="e#319#330#0" expanded="true" />
-            <element signature="e#375#384#0" expanded="true" />
+            <element signature="e#319#330#0" expanded="false" />
+            <element signature="e#375#384#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1578,11 +1555,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestConsecutiveSequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1279" selection-end="2269" vertical-scroll-proportion="0.03508772" vertical-offset="597" max-vertical-offset="1425">
+        <state line="41" column="0" selection-start="1279" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="597" max-vertical-offset="1425">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#389#407#0" expanded="true" />
             <element signature="e#1463#1481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1901" column="18" selection-start="75216" selection-end="75216" vertical-scroll-proportion="0.33333334" vertical-offset="27794" max-vertical-offset="46140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestPalindromicSubstring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="32" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/common/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="134" selection-end="134" vertical-scroll-proportion="0.19961977" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LongestSubstringWithoutRepeatingCharacters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="423" selection-end="848" vertical-scroll-proportion="0.30236796" vertical-offset="74" max-vertical-offset="630">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#408#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/common/MaxPointsOnALine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="23" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="1155">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#346#367#0" expanded="true" />
+            <element signature="e#1293#1308#0" expanded="true" />
+            <element signature="e#2260#2269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LargestRectangleInHistogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="154" selection-end="940" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <folding>
+            <element signature="e#351#360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/MaximalRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="44" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1185">
+          <folding>
+            <element signature="e#1120#1129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/LRUCache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.035230353" vertical-offset="2" max-vertical-offset="375">
+          <folding>
+            <element signature="e#0#516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/GrayCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="720">
+          <folding>
+            <element signature="e#364#372#0" expanded="true" />
+            <element signature="e#506#514#0" expanded="true" />
+            <element signature="e#822#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/leetcode/questions/LRUCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="34" selection-start="879" selection-end="879" vertical-scroll-proportion="-0.3" vertical-offset="705" max-vertical-offset="1245">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
