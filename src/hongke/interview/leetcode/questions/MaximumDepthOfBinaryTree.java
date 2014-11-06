@@ -4,6 +4,8 @@ package hongke.interview.leetcode.questions;
  * Created by hongke on 3/2/14.
  */
 
+import hongke.interview.leetcode.common.TreeNode;
+
 import java.util.Stack;
 
 /**
@@ -14,7 +16,7 @@ import java.util.Stack;
  *     TreeNode right;
  *     TreeNode(int x) { val = x; }
  * }
- *
+ *w
  * Given a binary tree, find its maximum depth.
 
  * The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
@@ -71,13 +73,4 @@ public class MaximumDepthOfBinaryTree {
         }
         return maxDepth;
     }
-
-    // Definition for binary tree
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
-
 }

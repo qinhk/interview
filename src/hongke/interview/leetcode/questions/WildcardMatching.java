@@ -9,45 +9,33 @@ public class WildcardMatching {
             return false;
         }
 
-        int si = 0, pi = 0;
-        boolean result = dfs(s, si, p, pi);
-//        System.out.println(count);
-        return result;
-    }
-
-    private boolean dfs(String s, int si, String p, int pi) {
-        while (pi < p.length() && si <= s.length()) {
-            if (p.charAt(pi) == '*') {
-                while (pi < p.length() && p.charAt(pi) == '*') {
-                    pi ++;
-                }
-                if (pi == p.length()) {
-                    return true;
-                } else {
-                    boolean found = false;
-                    while (si < s.length() && !found){
-                        found = dfs(s, si, p, pi);
-
-                        if (p.charAt(pi) != '?' ) {
-                            si = s.indexOf(p.charAt(pi), si + 1);
-                        } else {
-                            si ++;
-                        }
-                        if (si < 0) {
-                            break;
-                        }
-                    }
-
-                    return found;
-                }
-            } else if  (si < s.length() && (p.charAt(pi) == '?' || p.charAt(pi) == s.charAt(si))) {
-                pi ++;
+        int si = 0, pi = 0, lastStar = -1, match = 0;
+        while (si < s.length()) {
+            if (pi < p.length() && (p.charAt(pi) == s.charAt(si) || p.charAt(pi) == '?')) {
                 si ++;
+                pi ++;
+            } else if (pi < p.length() && p.charAt(pi) == '*') {
+                lastStar = pi;
+                match = si;
+                pi ++;
+            } else if (lastStar != -1) {
+                pi = lastStar + 1;
+                match ++;
+                si = match;
             } else {
                 return false;
             }
         }
-        return si == s.length() && pi == p.length();
+
+        while (pi < p.length() && p.charAt(pi) == '*') {
+            pi ++;
+        }
+
+        if (pi == p.length()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static void main(String[] args) {
@@ -59,19 +47,24 @@ public class WildcardMatching {
         System.out.println(match.isMatch("", "")); //T
         System.out.println(match.isMatch("", "*")); //T
         System.out.println(! match.isMatch("", "?")); //F
+        System.out.println();
+
         System.out.println(match.isMatch("s", "*"));//T
         System.out.println(match.isMatch("a", "?"));//T
         System.out.println(! match.isMatch("ab", "aa"));//F
         System.out.println(match.isMatch("aab", "a*"));//T
         System.out.println(match.isMatch("a", "a*"));//T
+        System.out.println();
+
         System.out.println(match.isMatch("aabaaab", "a*b"));//T
         System.out.println(! match.isMatch("aabaaab", "a*a"));//F
         System.out.println(match.isMatch("aabaaab", "a**"));//T
         System.out.println(match.isMatch("aabaaab", "a*a*********b"));//T
         System.out.println(match.isMatch("aab", "a?b"));//T
+        System.out.println();
+
         System.out.println(match.isMatch("aab", "aab*"));//T
         System.out.println(! match.isMatch("a", "aa*"));//T
-
         start = System.nanoTime();
         System.out.println(match.isMatch("aabbccddeeeeeghf", "aa*bb*cc*dd*ghf"));//T
         end = System.nanoTime();
@@ -79,6 +72,11 @@ public class WildcardMatching {
 
         start = System.currentTimeMillis();
         System.out.println(match.isMatch("abbbaaaaaaaabbbabaaabbabbbaabaabbbbaabaabbabaabbabbaabbbaabaabbabaabaabbbbaabbbaabaaababbbbabaaababbaaa", "ab**b*bb*ab**ab***b*abaa**b*a*aaa**bba*aa*a*abb*a*a"));//T
+        end = System.currentTimeMillis();
+        System.out.println((end - start)/1000.0);
+
+        start = System.nanoTime();
+        System.out.println(match.isMatch("abbaabbbbababaababababbabbbaaaabbbbaaabbbabaabbbbbabbbbabbabbaaabaaaabbbbbbaaabbabbbbababbbaaabbabbabb", "***b**a*a*b***b*a*b*bbb**baa*bba**b**bb***b*a*aab*a**"));//T
         end = System.currentTimeMillis();
         System.out.println((end - start)/1000.0);
 

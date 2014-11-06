@@ -2,97 +2,37 @@ package hongke.interview.leetcode.questions;
 
 import hongke.interview.leetcode.common.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by hongke on 7/15/14.
  */
 public class UniqueBinarySearchTree2 {
     public List<TreeNode> generateTrees(int n) {
-        if (n <= 0) {
-            return new ArrayList<TreeNode>();
-        }
-        List<TreeNode> results = new ArrayList<TreeNode>();
-        results.add(new TreeNode(0));
-        for (int i = n;  i > 0; i  --) {
-            List<TreeNode> nextLevel = new ArrayList<TreeNode>();
-            for (TreeNode root : results) {
-                nextLevel.addAll(traversalAndGenerateNew(root));
-            }
-            results = nextLevel;
-        }
-
-        return results;
+        return recursiveGenerateTrees (n, 1);
     }
 
-    private List<TreeNode> traversalAndGenerateNew(TreeNode root) {
-        List<TreeNode> newTrees = new ArrayList<TreeNode>();
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        TreeNode current = root;
-        while (current != null) {
-
-            stack.push(current.right);
-            stack.push(current.left);
-
-            if (current.left == null) {
-                newTrees.add(copyAndAddNew(root, current, Direction.Left));
+    private List<TreeNode> recursiveGenerateTrees(int n, int min) {
+        List<TreeNode> result = new ArrayList<TreeNode>();
+        if (n == 0) {
+            result.add(null);
+        } else if (n == 1) {
+            result.add(new TreeNode(min));
+        } else {
+            for (int i = 0; i < n; i ++) {
+                List<TreeNode> lefts = recursiveGenerateTrees(i, min);
+                List<TreeNode> rights = recursiveGenerateTrees(n - i - 1, min + i + 1);
+                for (int j = 0; j < lefts.size(); j ++) {
+                    for (int k = 0; k < rights.size(); k ++) {
+                        TreeNode node = new TreeNode(min + i);
+                        node.left = lefts.get(j);
+                        node.right = rights.get(k);
+                        result.add(node);
+                    }
+                }
             }
-            if (current.right == null) {
-                newTrees.add(copyAndAddNew(root, current, Direction.Right));
-            }
-
-            current = stack.pop();
         }
-
-        return newTrees;
-    }
-
-    private TreeNode copyAndAddNew(TreeNode root, TreeNode current, Direction direction) {
-        if (root == null || current == null) {
-            return null;
-        }
-
-        TreeNode newRoot = new TreeNode(0);
-        newRoot.val = root.val;
-        Stack<TreeNode> newNodes = new Stack<TreeNode>();
-        Stack<TreeNode> oldNodes = new Stack<TreeNode>();
-        TreeNode oldCur = root;
-        TreeNode newCur = newRoot;
-        while (oldCur != null) {
-
-            if (oldCur.right != null) {
-                TreeNode newRight = new TreeNode(0);
-                newRight.val = oldCur.right.val;
-                newCur.right = newRight;
-                newNodes.push(newRight);
-                oldNodes.push(oldCur.right);
-            }
-            if (oldCur.left != null) {
-                TreeNode newLeft = new TreeNode(0);
-                newLeft.val = oldCur.left.val;
-                newCur.left = newLeft;
-                newNodes.push(newLeft);
-                oldNodes.push(oldCur.left);
-            }
-
-            if (current == oldCur && direction == Direction.Left) {
-                oldCur.left = new TreeNode(0);
-            } else if (current == oldCur && direction == Direction.Right) {
-                oldCur.right = new TreeNode(0);
-            }
-
-            oldCur = oldNodes.isEmpty() ? null : oldNodes.pop();
-            newCur = newNodes.isEmpty() ? null : newNodes.pop();
-
-        }
-
-        return newRoot;
-    }
-
-    enum Direction {
-        Left, Right;
+        return result;
     }
 
     public static void main(String[] args) {

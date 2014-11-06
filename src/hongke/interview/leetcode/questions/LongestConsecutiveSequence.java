@@ -1,8 +1,6 @@
 package hongke.interview.leetcode.questions;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by hongke on 9/11/14.
@@ -72,18 +70,43 @@ public class LongestConsecutiveSequence {
         return longest;
     }
 
+    public int longestConsecutiveSimple(int[] num) {
+        Integer longest = 1;
+        Set<Integer> remains = new HashSet<Integer>();
+
+        for (int n : num) {
+            remains.add(n);
+        }
+
+        for (int n : num) {
+            int length = 1, left = n - 1, right = n + 1;
+            while (remains.contains(left)) {
+                remains.remove(left);
+                left --;
+                length ++;
+            }
+            while (remains.contains(right)) {
+                remains.remove(right);
+                right ++;
+                length ++;
+            }
+            longest = Math.max(longest, length);
+        }
+        return longest;
+    }
+
     public static void main(String[] args) {
         LongestConsecutiveSequence test = new LongestConsecutiveSequence();
-        System.out.println(test.longestConsecutive(new int[] {0, -1}));
-        System.out.println(test.longestConsecutive(new int[] {100, 4, 200, 1, 3, 2}));
-        System.out.println(test.longestConsecutive(new int[] {1, 2, 0, 1}));
+        System.out.println(test.longestConsecutiveSimple(new int[] {0, -1}));
+        System.out.println(test.longestConsecutiveSimple(new int[] {100, 4, 200, 1, 3, 2}));
+        System.out.println(test.longestConsecutiveSimple(new int[] {1, 2, 0, 1}));
 
         int[] input = new int[10000];
         for (int i = 0; i < 10000; i ++) {
             input[i] = i;
         }
         System.out.println(System.currentTimeMillis());
-        System.out.println(test.longestConsecutiveSlow(input));
+        System.out.println(test.longestConsecutiveSimple(input));
         System.out.println(System.currentTimeMillis());
     }
 }

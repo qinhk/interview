@@ -2,7 +2,6 @@ package hongke.interview.leetcode.questions;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Deque;
 import java.util.Queue;
 
 /**
@@ -17,11 +16,6 @@ public class SurroundedRegions {
 
         int width = board[0].length;
         int height = board.length;
-        char[][] results = new char[height][width];
-
-        for (char[] row : results) {
-            Arrays.fill(row, 'X');
-        }
 
         // Mark white spaces on edges with '1'
         // top and bottom
@@ -30,7 +24,7 @@ public class SurroundedRegions {
                 fillBoard(board, 0, i, '1');
             }
             if (board[height - 1][i] == 'O') {
-                fillBoard(board, height - 1, i, '1');;
+                fillBoard(board, height - 1, i, '1');
             }
         }
 
@@ -58,30 +52,39 @@ public class SurroundedRegions {
     private void fillBoard(char[][] board, int i, int j, char c) {
         int width = board[0].length;
         int height = board.length;
-        Queue<Integer[]> queue = new ArrayDeque<Integer[]>();
-        queue.add(new Integer[]{i, j});
-        while (!queue.isEmpty()) {
-            Integer[] pos = queue.poll();
-            int x = pos[1], y = pos[0];
-            board[y][x] = c;
+        Queue<Integer> X = new ArrayDeque<Integer>();
+        Queue<Integer> Y = new ArrayDeque<Integer>();
+        X.add(j);
+        Y.add(i);
+        board[i][j] = c;
+        while (!X.isEmpty()) {
+            int x = X.poll(), y = Y.poll();
             if (y - 1 >= 0 && board[y - 1][x] == 'O') {
-                queue.add(new Integer[]{y - 1, x});
+                Y.add(y - 1);
+                X.add(x);
+                board[y - 1][x] = c;
             }
             if (y + 1 < height && board[y + 1][x] == 'O') {
-                queue.add(new Integer[]{y + 1, x});
+                Y.add(y + 1);
+                X.add(x);
+                board[y + 1][x] = c;
             }
             if (x - 1 >= 0 && board[y][x - 1] == 'O') {
-                queue.add(new Integer[]{y, x - 1});
+                Y.add(y);
+                X.add(x - 1);
+                board[y][x - 1] = c;
             }
             if (x + 1 < width && board[y][x + 1] == 'O') {
-                queue.add(new Integer[]{y, x + 1});
+                Y.add(y);
+                X.add(x + 1);
+                board[y][x + 1] = c;
             }
         }
     }
 
     public static void main(String[] args) {
         SurroundedRegions test = new SurroundedRegions();
-        char[][] board = null;
+        char[][] board;
         board = new char[][] {
             {'X', 'X', 'O', 'X'},
             {'X', 'X', 'X', 'X'},
@@ -91,7 +94,17 @@ public class SurroundedRegions {
         test.solve(board);
         prettyPrint(board);
 
-        System.out.println(System.currentTimeMillis());
+        board = new char[][] {
+            {'O', 'O', 'O', 'O'},
+            {'O', 'O', 'O', 'O'},
+            {'O', 'O', 'O', 'O'},
+            {'O', 'O', 'O', 'O'}
+        };
+        test.solve(board);
+        prettyPrint(board);
+
+
+
         board = new char[][] {
             {'X','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
             {'O','X','O','O','O','O','X','O','O','O','O','O','O','O','O','O','O','O','X','X'},
@@ -114,9 +127,38 @@ public class SurroundedRegions {
             {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
             {'X','O','O','O','O','X','O','O','O','X','X','O','O','X','O','X','O','X','O','O'}
         };
-        test.solve(board);
-        prettyPrint(board);
         System.out.println(System.currentTimeMillis());
+        test.solve(board);
+        System.out.println(System.currentTimeMillis());
+        prettyPrint(board);
+
+
+        board = new char[][] {
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'},
+            {'O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O','O'}
+        };
+        System.out.println(System.currentTimeMillis());
+        test.solve(board);
+        System.out.println(System.currentTimeMillis());
+        prettyPrint(board);
     }
 
     public static void prettyPrint(char[][] board) {

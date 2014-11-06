@@ -35,6 +35,19 @@ public class SingleNumberII {
         }
     }
 
+        public int singleNumber2(int A[]) {
+            int ones = 0, twos = 0, xthrees = 0;
+            for(int i = 0; i < A.length; ++i) {
+                twos |= (ones & A[i]);
+                ones ^= A[i];
+                xthrees = ~(ones & twos);
+                ones &= xthrees;
+                twos &= xthrees;
+            }
+
+            return ones;
+        }
+
     public static void main(String[] args) {
         SingleNumberII test = new SingleNumberII();
         int[] input;
@@ -53,6 +66,6 @@ public class SingleNumberII {
         System.out.println(test.singleNumber(input));
 
         input = new int[] {1, 1, 1, 255, 255, 255, -1};
-        System.out.println(test.singleNumber(input));
+        System.out.println(test.singleNumber2(input));
     }
 }

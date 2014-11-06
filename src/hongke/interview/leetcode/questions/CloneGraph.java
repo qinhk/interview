@@ -6,30 +6,36 @@ package hongke.interview.leetcode.questions;
 
 import hongke.interview.leetcode.common.UndirectedGraphNode;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
 
 
 public class CloneGraph {
-
-    Set<UndirectedGraphNode> visited;
-
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
-        UndirectedGraphNode clone = new UndirectedGraphNode(node.label);
-        Deque<UndirectedGraphNode> nodes = new ArrayDeque<UndirectedGraphNode>
-                ();
-        Deque<UndirectedGraphNode> clones = new ArrayDeque<UndirectedGraphNode>
-                ();
 
-        nodes.addLast(node);
-        while (!nodes.isEmpty()) {
-            cloneNode(nodes.getFirst());
+        if (node == null) {
+            return null;
         }
-        return clone;
-    }
 
-    private void cloneNode(UndirectedGraphNode node) {
+        Map<Integer, UndirectedGraphNode> added = new HashMap<Integer, UndirectedGraphNode>();
+        LinkedList<UndirectedGraphNode> toAdd = new LinkedList<UndirectedGraphNode>();
+        toAdd.add(node);
+        while (!toAdd.isEmpty()) {
+            UndirectedGraphNode curr = toAdd.remove(0);
+            if (!added.containsKey(curr.label)) {
+                added.put(curr.label, new UndirectedGraphNode(curr.label));
+            }
 
+            UndirectedGraphNode newNode = added.get(curr.label);
+            for (UndirectedGraphNode neighbor : curr.neighbors) {
+                if (!added.containsKey(neighbor.label)) {
+                    toAdd.add(neighbor);
+                    added.put(neighbor.label, new UndirectedGraphNode(neighbor.label));
+                }
+                newNode.neighbors.add(added.get(neighbor.label));
+            }
+        }
+        return added.get(node.label);
     }
 }

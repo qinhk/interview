@@ -77,6 +77,25 @@ public class CopyListWithRandomPointer {
         head2.random = head2;
         test(head2);
 
+        head = new RandomListNode(0);
+        RandomListNode n = head;
+        for (int i = 1; i < 10; i ++) {
+            n.next = new RandomListNode(i);
+            n = n.next;
+        }
+
+        n = head;
+        RandomListNode node = n == null ? null : n.next;
+        RandomListNode r = node;
+        while (n != null && n.next != null) {
+            n.next = node.next;
+            n = n.next;
+            node.next = n == null ? null : n.next;
+            node = node.next;
+        }
+
+        System.out.println(node);
+
     }
 
     private static void test (RandomListNode head) {
