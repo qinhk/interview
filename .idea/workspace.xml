@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="296774aa-4838-4dd3-879a-f00eea8c714b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/model/Box.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/EditDistance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/Knapsack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/model/KnapsackItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testEditDistance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testKnapsack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/BoxStacking.java" afterPath="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/BoxStacking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interview.iml" afterPath="$PROJECT_DIR$/interview.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testBoxStacking.java" afterPath="$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testBoxStacking.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/TestValidParenthesis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/ValidParenthesis.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="interview.iws" />
@@ -31,10 +24,16 @@
     <SUITE FILE_PATH="coverage/interview$testKnapsack_testNull.coverage" NAME="testKnapsack.testNull Coverage Results" MODIFIED="1415347759493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>hongke.interview.algorithms.dp.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/interview$TestValidParenthesis_testEasy.coverage" NAME="TestValidParenthesis.testEasy Coverage Results" MODIFIED="1415355439820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>hongke.interview.algorithms.dp.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/interview$testKnapsack.coverage" NAME="testKnapsack Coverage Results" MODIFIED="1415347902094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>hongke.interview.algorithms.dp.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/interview$hongke_interview_algorithms_dp_in_interview.coverage" NAME="hongke.interview.algorithms.dp in interview Coverage Results" MODIFIED="1415348139144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>hongke.interview.algorithms.dp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/interview$TestValidParenthesis.coverage" NAME="TestValidParenthesis Coverage Results" MODIFIED="1415355895599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>hongke.interview.algorithms.dp.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/interview$testEditDistance.coverage" NAME="testEditDistance Coverage Results" MODIFIED="1415348038839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -650,7 +649,32 @@
     <favorites_list name="interview" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ValidParenthesis.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hongke/interview/algorithms/dp/ValidParenthesis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1083">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestValidParenthesis.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/TestValidParenthesis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6530899" vertical-offset="276" max-vertical-offset="988">
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -671,6 +695,8 @@
         <option value="$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testKnapsack.java" />
         <option value="$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testEditDistance.java" />
         <option value="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/EditDistance.java" />
+        <option value="$PROJECT_DIR$/src/hongke/interview/algorithms/dp/ValidParenthesis.java" />
+        <option value="$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/TestValidParenthesis.java" />
       </list>
     </option>
   </component>
@@ -696,16 +722,25 @@
             <id>Android Lint</id>
           </State>
           <State>
+            <id>Bitwise operation issues</id>
+          </State>
+          <State>
+            <id>Class structure</id>
+          </State>
+          <State>
             <id>Code style issues</id>
           </State>
           <State>
-            <id>Declaration redundancy</id>
-          </State>
-          <State>
-            <id>Error handling</id>
+            <id>Finalization issues</id>
           </State>
           <State>
             <id>Groovy</id>
+          </State>
+          <State>
+            <id>Initialization issues</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
           </State>
           <State>
             <id>J2ME issues</id>
@@ -714,35 +749,54 @@
             <id>JUnit issues</id>
           </State>
           <State>
-            <id>Manifest</id>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
+            <id>Logging issues</id>
           </State>
           <State>
             <id>Memory issues</id>
           </State>
           <State>
-            <id>Naming ConventionsGroovy</id>
+            <id>Modularization issues</id>
           </State>
           <State>
-            <id>Naming conventions</id>
+            <id>Numeric issues</id>
+          </State>
+          <State>
+            <id>OtherGroovy</id>
           </State>
           <State>
             <id>Performance issues</id>
           </State>
           <State>
-            <id>Portability issues</id>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
           </State>
           <State>
             <id>Probable bugs</id>
           </State>
           <State>
-            <id>Properties Files</id>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Security issues</id>
+          </State>
+          <State>
+            <id>Serialization issues</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>XPath</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>Abstraction issues</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -801,6 +855,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tst" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interview" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -839,7 +911,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="true" />
     <property name="SearchEverywhereHistory" value="new c&#10;new clas&#10;new class&#10;Unique&#10;LRUCache&#10;largest&#10;new Clas&#10;new Class&#10;line&#10;Merge&#10;new Cla&#10;new C&#10;new cla&#10;(&#10;New class" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.lastSelected" value="preferences.editor" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -858,7 +930,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.hongke.interview.algorithms.dp in interview">
+  <component name="RunManager" selected="JUnit.TestValidParenthesis">
     <configuration default="false" name="testEditDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -919,7 +991,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="testKnapsack.testNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestValidParenthesis.testNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="hongke.interview.algorithms.dp.*" />
@@ -930,7 +1002,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="hongke.interview.algorithms.dp" />
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.algorithms.dp.testKnapsack" />
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.algorithms.dp.TestValidParenthesis" />
       <option name="METHOD_NAME" value="testNull" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -943,19 +1015,24 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Cover" />
-      <ConfigurationWrapper RunnerId="Cover" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="All in interview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="false" name="TestValidParenthesis.testEasy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="hongke.interview.algorithms.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="interview" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="hongke.interview.algorithms.dp" />
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.algorithms.dp.TestValidParenthesis" />
+      <option name="METHOD_NAME" value="testEasy" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -967,10 +1044,18 @@
       <envs />
       <patterns />
       <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="testKnapsack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestValidParenthesis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="hongke.interview.algorithms.dp.*" />
@@ -981,7 +1066,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="hongke.interview.algorithms.dp" />
-      <option name="MAIN_CLASS_NAME" value="hongke.interview.algorithms.dp.testKnapsack" />
+      <option name="MAIN_CLASS_NAME" value="hongke.interview.algorithms.dp.TestValidParenthesis" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -995,7 +1080,9 @@
       <envs />
       <patterns />
       <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -1154,17 +1241,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.testEditDistance" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.hongke.interview.algorithms.dp in interview" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.testKnapsack.testNull" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in interview" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.testKnapsack" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestValidParenthesis.testNull" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestValidParenthesis.testEasy" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestValidParenthesis" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.hongke.interview.algorithms.dp in interview" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.testEditDistance" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.testKnapsack" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in interview" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.testKnapsack.testNull" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestValidParenthesis" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestValidParenthesis.testEasy" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestValidParenthesis.testNull" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.hongke.interview.algorithms.dp in interview" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.testEditDistance" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1199,17 +1286,17 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26732674" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960597" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26732674" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23056443" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1773163" sideWeight="0.49872774" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1773163" sideWeight="0.49872774" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3468869" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33547926" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37130177" sideWeight="0.50127226" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3048193" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30396038" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1512,11 +1599,17 @@
           <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/TestValidParenthesis.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="126" />
+      <option name="time" value="127" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1788,13 +1881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testMaximumValueContiguousSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1338912" vertical-offset="722" max-vertical-offset="1245">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/datastructure/BST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2340">
@@ -1867,18 +1953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testEditDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8848315" vertical-offset="0" max-vertical-offset="780">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hongke/interview/algorithms/dp/model/KnapsackItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
@@ -1906,6 +1980,44 @@
         <state vertical-scroll-proportion="0.37921348" vertical-offset="60" max-vertical-offset="1020">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testMaximumValueContiguousSubsequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.252809" vertical-offset="0" max-vertical-offset="1245">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#371#372#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/testEditDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hongke/interview/algorithms/dp/ValidParenthesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1083">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/hongke/interview/algorithms/dp/TestValidParenthesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6530899" vertical-offset="276" max-vertical-offset="988">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
