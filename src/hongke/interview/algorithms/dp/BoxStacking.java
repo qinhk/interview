@@ -1,5 +1,7 @@
 package hongke.interview.algorithms.dp;
 
+import hongke.interview.algorithms.dp.model.Box;
+
 import java.util.*;
 
 /**
@@ -12,30 +14,6 @@ import java.util.*;
  * Retrun: maximum possible height
  */
 public class BoxStacking {
-
-    public static class Box {
-        public int l;
-        public int w;
-        public int h;
-
-        public Box(int l, int w, int h) {
-            if (l <= 0 || w <= 0 || h <= 0) {
-                throw new IllegalArgumentException("Invalid box!");
-            }
-            this.l = l;
-            this.w = w;
-            this.h = h;
-        }
-
-        @Override
-        public String toString() {
-            return "Box{" +
-                    "l=" + l +
-                    ", w=" + w +
-                    ", h=" + h +
-                    '}';
-        }
-    }
 
     private List<Box> rotateBox(Box box) {
         Map<String, Box> boxes = new HashMap<String, Box>();
@@ -89,7 +67,7 @@ public class BoxStacking {
 
         int height = 0;
         if (i < boxes.size()) {
-            Box box = boxes.get(index);
+            Box box = boxes.get(i);
             height = Math.max(stackBox(boxes, index + 1, l, w, cache), box.h + stackBox(boxes, i + 1, box.l, box.w, cache));
         }
         cache.put(cacheKey, height);
