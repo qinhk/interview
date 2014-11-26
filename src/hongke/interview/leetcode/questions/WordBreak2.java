@@ -6,7 +6,7 @@ import java.util.*;
  * Created by hongke on 6/26/14.
  */
 public class WordBreak2 {
-    public List<String> wordBreak(String s, Set<String> dict) {
+    public List<String> wordBreak1(String s, Set<String> dict) {
         if (s == null || s.length() == 0 || dict == null || dict.size() == 0) {
             return new ArrayList<String>();
         }
@@ -58,39 +58,85 @@ public class WordBreak2 {
         }
     }
 
+    public List<String> wordBreak(String s, Set<String> dict) {
+        if (s == null || s.length() == 0 || dict == null || dict.size() == 0) {
+            return new ArrayList<String>();
+        }
+
+        Map<Integer, List<List<String>>> cache = new HashMap<Integer, List<List<String>>>();
+        for (int i = 1; i <= s.length(); i ++) {
+            Map<Integer, List<List<String>>> newMap = new HashMap<Integer, List<List<String>>>();
+            for (Map.Entry<Integer, List<List<String>>> e : cache.entrySet()) {
+                if (dict.contains(s.substring(e.getKey(), i))) {
+                    List<List<String>> lists = new ArrayList<List<String>>(e.getValue());
+                    for (List<String> l : lists) {
+                        l.add(s.substring(e.getKey(), i));
+                    }
+                    if (!newMap.containsKey(i)) {
+                        newMap.put(i, new ArrayList());
+                    }
+                    newMap.get(i).addAll(lists);
+                }
+            }
+            if (dict.contains(s.substring(0, i))) {
+                if (!newMap.containsKey(i)) {
+                    newMap.put(i, new ArrayList());
+                }
+                List<String> l = new ArrayList<String>();
+                l.add(s.substring(0, i));
+                newMap.get(i).add(l);
+            }
+            cache.putAll(newMap);
+        }
+        if (cache.containsKey(s.length())) {
+            List<String> result = new ArrayList<String>();
+            for (List<String> words : cache.get(s.length())) {
+                StringBuilder sb = new StringBuilder();
+                for (String w : words) {
+                    sb.append(" " + w);
+                }
+                result.add(sb.substring(1));
+            }
+            return result;
+        } else {
+            return new ArrayList<String>();
+        }
+    }
+
     public static void main(String[] args) {
         WordBreak2 wb2 = new WordBreak2();
         Set<String> dict;
         long start, end;
 
-        dict = new HashSet(Arrays.asList(new String[] {"a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"}));
-        start = System.nanoTime();
-        System.out.println(wb2.wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", dict).size());
-        end = System.nanoTime();
-        System.out.println((end - start) / 1000);
 
         dict = new HashSet(Arrays.asList(new String[] {"a"}));
         start = System.nanoTime();
-        System.out.println(wb2.wordBreak("a", dict));
+        System.out.println(wb2.wordBreak1("a", dict));
         end = System.nanoTime();
         System.out.println((end - start) / 1000);
 
         //"bb", ["a","b","bbb","bbbb"]
         dict = new HashSet(Arrays.asList(new String[] {"a","b","bbb","bbbb"}));
         start = System.nanoTime();
-        System.out.println(wb2.wordBreak("bb", dict));
+        System.out.println(wb2.wordBreak1("bb", dict));
         end = System.nanoTime();
         System.out.println((end - start) / 1000);
 
         dict = new HashSet(Arrays.asList(new String[] {"cat", "cats", "and", "sand", "dog"}));
         start = System.nanoTime();
-        System.out.println(wb2.wordBreak("catsanddog", dict));
+        System.out.println(wb2.wordBreak1("catsanddog", dict));
         end = System.nanoTime();
         System.out.println((end - start) / 1000);
 
         dict = new HashSet(Arrays.asList(new String[] {"a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"}));
         start = System.nanoTime();
-        System.out.println(wb2.wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", dict));
+        System.out.println(wb2.wordBreak1("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", dict));
+        end = System.nanoTime();
+        System.out.println((end - start) / 1000);
+
+        dict = new HashSet(Arrays.asList(new String[] {"a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"}));
+        start = System.nanoTime();
+        System.out.println(wb2.wordBreak1("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", dict));
         end = System.nanoTime();
         System.out.println((end - start) / 1000);
 

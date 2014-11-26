@@ -7,7 +7,7 @@ import java.util.Map;
  * Created by hongke on 9/1/14.
  */
 public class MinimumWindowSubstring {
-    public String minWindow(String S, String T) {
+    public String minWindow1(String S, String T) {
         if (S == null || T == null || S.isEmpty() || T.isEmpty()) {
             return "";
         }
@@ -62,8 +62,69 @@ public class MinimumWindowSubstring {
         return true;
     }
 
+    public String minWindow(String S, String T) {
+        if (S == null || T == null || S.length() == 0 || T.length() == 0) {
+            return "";
+        }
+
+        int i = 0, j = 0;
+        String result = null;
+        Map<Character, Integer> ref = new HashMap<Character, Integer>();
+        for (Character c : T.toCharArray()) {
+            add(ref, c);
+        }
+        Map<Character, Integer> content = new HashMap<Character, Integer>();
+        while (true) {
+            if (j < S.length() && !contains(content, ref)) {
+                if (ref.containsKey(S.charAt(j))) {
+                    add(content, S.charAt(j));
+                }
+                j ++;
+            } else if (contains(content, ref)){
+                while (i < j && contains(content, ref)) {
+                    if (ref.containsKey(S.charAt(i))) {
+                        deduct(content, S.charAt(i));
+                    }
+                    i ++;
+                }
+                if (result == null || j - i + 1 < result.length()) {
+                    result = S.substring(i - 1, j);
+                }
+            } else {
+                break;
+            }
+        }
+        return result == null ? "" : result;
+    }
+
+    private void add(Map<Character, Integer> map, Character c) {
+        if (!map.containsKey(c)) {
+            map.put(c, 0);
+        }
+        map.put(c, map.get(c) + 1);
+    }
+
+    private void deduct(Map<Character, Integer> map, Character c) {
+        if (map.containsKey(c)) {
+            map.put(c, map.get(c) - 1);
+            if (map.get(c) <= 0) {
+                map.remove(c);
+            }
+        }
+    }
+
+    private boolean contains(Map<Character, Integer> map1, Map<Character, Integer> map2) {
+        for (Map.Entry<Character, Integer> entry : map2.entrySet()) {
+            if (!map1.containsKey(entry.getKey()) || map1.get(entry.getKey()) < map2.get(entry.getKey())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         MinimumWindowSubstring test = new MinimumWindowSubstring();
+        System.out.println(test.minWindow("bba", "ab"));
         System.out.println(test.minWindow("bdab", "ab"));
     }
 }

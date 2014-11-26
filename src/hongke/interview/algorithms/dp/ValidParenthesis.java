@@ -47,5 +47,4 @@ public class ValidParenthesis {
                 throw new IllegalStateException("Invalid character");
         }
     }
-
 }

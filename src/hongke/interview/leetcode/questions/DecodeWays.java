@@ -1,5 +1,6 @@
 package hongke.interview.leetcode.questions;
 
+import java.util.Arrays;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -9,7 +10,7 @@ import java.util.TreeMap;
 public class DecodeWays {
     Map<Integer, Integer> cache;
 
-    public int numDecodings(String s) {
+    public int numDecodings1(String s) {
         long start = System.nanoTime();
         int result;
         try {
@@ -50,8 +51,37 @@ public class DecodeWays {
     	
     }
 
+    public int numDecodings(String s) {
+        if (s == null || s.length() < 1) {
+            return 0;
+        }
+
+        char[] chars = s.toCharArray();
+        int[] cache = new int[s.length() + 1];
+        cache[0] = chars[0] == '0' ? 0 : 1;
+        cache[1] = chars[0] == '0' ? 0 : 1;
+        for (int i = 2; i <= s.length(); i ++) {
+            int code = getCode(chars[i-2], chars[i - 1]);
+            if (code > 10 && code <= 26 && code != 10 && code != 20) {
+                cache[i] = cache[i - 1] + cache[i - 2];
+            } else if (code == 10 || code == 20) {
+                cache[i] = cache[i - 2];
+            } else if (code % 10 != 0){
+                cache[i] = cache[i - 1];
+            }
+        }
+        return cache[s.length()];
+    }
+
+
+
+    private int getCode(char c1, char c2) {
+        return (c1 - '0') * 10 + c2 - '0';
+    }
+
     public static void main(String[] args) {
         DecodeWays test = new DecodeWays();
+        System.out.println(test.numDecodings("10"));
         System.out.println(test.numDecodings("27"));
         System.out.println(test.numDecodings("110"));
         System.out.println(test.numDecodings("12"));

@@ -32,8 +32,40 @@ public class LargestRectangleInHistogram {
         return max;
     }
 
+    public int largestRectangleArea1(int[] heights) {
+        if (heights == null || heights.length == 0)  {
+            return 0;
+        }
+
+        Stack<Integer> stack = new Stack<Integer>();
+        int max = 0;
+        for (int i = 0; i < heights.length; i ++) {
+            if (stack.isEmpty() || heights[i] >= heights[stack.peek()]) {
+                stack.push(i);
+            } else {
+                max = Math.max(max, calculateArea(stack, heights, i));
+                stack.push(i);
+            }
+        }
+        max = Math.max(max, calculateArea(stack, heights, heights.length));
+        return max;
+    }
+
+    private int calculateArea(Stack<Integer> stack, int[] heights, int next) {
+        if (stack.isEmpty())
+            return 0;
+        int right = stack.peek() + 1, max = 0;
+        while (!stack.isEmpty() && (next >= heights.length || heights[stack.peek()] >= heights[next])) {
+            int height = heights[stack.pop()];
+            int left = stack.isEmpty() ? 0 : stack.peek() + 1;
+            max = Math.max(max, height * (right - left));
+        }
+        return max;
+    }
+
     public static void main(String[] args) {
         LargestRectangleInHistogram test = new LargestRectangleInHistogram();
+        System.out.println(test.largestRectangleArea(new int[] {2, 0, 2}));
         System.out.println(test.largestRectangleArea(new int[] {2, 2, 5, 6, 2, 3}));
         System.out.println(test.largestRectangleArea(new int[] {3, 3}));
         System.out.println(test.largestRectangleArea(new int[] {4, 3, 4, 3}));

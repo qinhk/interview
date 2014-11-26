@@ -6,7 +6,7 @@ import hongke.interview.leetcode.common.ListNode;
  * Created by hongke on 8/10/14.
  */
 public class ReverseLinkedListII {
-    public ListNode reverseBetween(ListNode head, int m, int n) {
+    public ListNode reverseBetween1(ListNode head, int m, int n) {
         if (head == null || n <= m) {
             return head;
         }
@@ -32,6 +32,37 @@ public class ReverseLinkedListII {
         }
 
         return result.next;
+    }
+
+    public ListNode reverseBetween(ListNode head, int m, int n) {
+        if (head == null || head.next == null || m == n) {
+            return head;
+        }
+
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode follower = dummy, runner = dummy;
+
+        while (m > 1) {
+            follower = follower.next;
+            runner = runner.next;
+            m --;
+            n --;
+        }
+        ListNode t1 = follower.next;
+        while (n > 0) {
+            runner = runner.next;
+            n --;
+        }
+        follower.next = runner;
+        while (runner != t1) {
+            ListNode t2 = runner.next;
+            runner.next = t1;
+            t1 = t1.next;
+            runner.next.next = t2;
+        }
+
+        return dummy.next;
     }
 
     public static void main(String[] args) {

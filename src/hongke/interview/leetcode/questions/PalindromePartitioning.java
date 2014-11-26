@@ -66,6 +66,6 @@ public class PalindromePartitioning {
         System.out.println(test.partition("aab"));
         System.out.println(test.partition("ab"));
         System.out.println(test.partition("aabb"));
-        System.out.println(test.partition("aaaaaaaaaa"));
+        System.out.println(test.partition("ababbbabbaba"));
     }
 }

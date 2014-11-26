@@ -3,13 +3,14 @@ package hongke.interview.leetcode.questions;
 import hongke.interview.leetcode.common.TreeLinkNode;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Queue;
 
 /**
  * Created by hongke on 8/18/14.
  */
 public class PopulatingNextRightPointersInEachNodeII {
-    public void connect(TreeLinkNode root) {
+    public void connect1(TreeLinkNode root) {
         if (root == null) {
             return;
         }
@@ -30,6 +31,37 @@ public class PopulatingNextRightPointersInEachNodeII {
                 }
                 node.next = currentLevel.isEmpty() ? null : currentLevel.peek();
             }
+        }
+    }
+
+    public void connect(TreeLinkNode root) {
+        if (root == null) {
+            return;
+        }
+
+        populateNext(root, new ArrayDeque<TreeLinkNode>());
+    }
+
+    private void populateNext(TreeLinkNode node, Deque<TreeLinkNode> queue) {
+        if (node == null)
+            return;
+        enqueue(queue, node.left);
+        enqueue(queue, node.right);
+        if (node.next != null) {
+            queue.add(node.next.left);
+            queue.add(node.next.right);
+        }
+        while (queue.size() > 1) {
+            queue.removeFirst().next = queue.getFirst();
+        }
+        queue.clear();
+        populateNext(node.left, queue);
+        populateNext(node.right, queue);
+    }
+
+    private void enqueue(Deque<TreeLinkNode> deque, TreeLinkNode node) {
+        if (node != null) {
+            deque.add(node);
         }
     }
 
