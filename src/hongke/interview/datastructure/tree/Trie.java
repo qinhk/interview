@@ -1,4 +1,4 @@
-package hongke.interview.datastructure;
+package hongke.interview.datastructure.tree;
 
 import java.util.*;
 

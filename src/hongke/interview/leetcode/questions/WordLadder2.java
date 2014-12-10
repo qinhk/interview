@@ -1,6 +1,6 @@
 package hongke.interview.leetcode.questions;
 
-import hongke.interview.datastructure.Trie;
+import hongke.interview.datastructure.tree.Trie;
 
 import java.util.*;
 

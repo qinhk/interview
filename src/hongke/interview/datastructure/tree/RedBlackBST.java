@@ -1,4 +1,4 @@
-package hongke.interview.datastructure;
+package hongke.interview.datastructure.tree;
 
 /**
  * Created by hongke on 10/28/14.

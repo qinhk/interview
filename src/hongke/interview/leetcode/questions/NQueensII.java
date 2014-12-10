@@ -62,12 +62,59 @@ public class NQueensII {
         return true;
     }
 
+    public int totalNQueens1(int n) {
+        if (n <= 0) {
+            return 0;
+        }
+
+        int [][] board = new int[n][n];
+        int [] result = new int[]{0};
+        findAllConfiguration(board, 0, result);
+        return result[0];
+
+    }
+
+    private void findAllConfiguration(int[][] board, int row, int[] count) {
+        if (row >= board.length) {
+            count[0] ++;
+        } else {
+            for (int i = 0; i < board.length; i++) {
+                board[row][i] = 1;
+                if (isValidate(board, row, i)) {
+                    findAllConfiguration(board, row + 1, count);
+                }
+                board[row][i] = 0;
+            }
+        }
+    }
+
+    private boolean isValidate(int[][] board, int y, int x) {
+        for (int i = 0; i < board.length; i ++) {
+            if (i == y) continue;
+            if (board[i][x] == 1) return false;
+        }
+        for (int i = 0; i < board.length; i ++) {
+            if (i == x) continue;
+            if (board[y][i] == 1) return false;
+        }
+        for (int i = 0, j = x - y; i < board.length && j < board.length; i ++, j ++) {
+            if (i == y || j < 0) continue;
+            if (board[i][j] == 1) return false;
+        }
+        for (int i = 0, j = x + y; i < board.length && j >= 0; i ++, j --) {
+            if (i == y || j >= board.length) continue;
+            if (board[i][j] == 1) return false;
+        }
+        return true;
+    }
+
+
     public static void main (String[] args) {
         NQueensII test = new NQueensII();
-        //        prettyPrint(test.solveNQueens(0));
-        //        prettyPrint(test.solveNQueens(1));
-        //        prettyPrint(test.solveNQueens(2));
-        //        prettyPrint(test.solveNQueens(3));
+        System.out.println(test.totalNQueens(0));
+        System.out.println(test.totalNQueens(1));
+        System.out.println(test.totalNQueens(2));
+        System.out.println(test.totalNQueens(3));
         System.out.println(test.totalNQueens(4));
         System.out.println(test.totalNQueens(9));
         System.out.println(test.totalNQueens(40));

@@ -4,7 +4,7 @@ package hongke.interview.leetcode.questions;
  * Created by hongke on 8/4/14.
  */
 public class SearchInRotatedSortedArray {
-    public int search(int[] A, int target) {
+    public int search1(int[] A, int target) {
         if (A == null || A.length == 0) {
             return -1;
         }
@@ -40,6 +40,32 @@ public class SearchInRotatedSortedArray {
             }
         }
         return -1;
+    }
+
+    public int search(int[] A, int target) {
+        if (A == null || A.length == 0) {
+            return -1;
+        }
+
+        return conditionalBinarySearch(A, target, 0, A.length - 1);
+    }
+
+    private int conditionalBinarySearch(int[] A, int target, int start, int end) {
+        if (start == end) {
+            return A[start] == target ? start : -1;
+        }
+        int mid = (start + end) / 2;
+        if (A[start] <= A[mid] && target >= A[start] && target <= A[mid]) {
+            return conditionalBinarySearch(A, target, start, mid);
+        } else if (A[mid + 1] <= A[end] && target >= A[mid + 1] && target <= A[end]) {
+            return conditionalBinarySearch(A, target, mid + 1, end);
+        } else if (A[start] > A[mid]) {
+            return conditionalBinarySearch(A, target, start, mid);
+        } else if (A[mid + 1] > A[end]) {
+            return conditionalBinarySearch(A, target, mid + 1, end);
+        } else {
+            return -1;
+        }
     }
 
     public static void main(String[] args) {
