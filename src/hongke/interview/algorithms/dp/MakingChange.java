@@ -1,5 +1,8 @@
 package hongke.interview.algorithms.dp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Making Change. You are given n types of coin denominations of values v(1) < v(2) < ... < v(n) (all integers). Assume
  * v(1) = 1, so you can always make change for any amount of money C. Give an algorithm which makes change for an amount
@@ -7,23 +10,29 @@ package hongke.interview.algorithms.dp;
  */
 public class MakingChange {
 
-    // return fewest coin count.
-    public int makingChange(int[] coins, int value) {
-        if (!precondition(coins, value)) return 0;
+    // bottom up approach
+    public List<Integer> makingChange(int[] coins, int value) {
+        if (!precondition(coins, value)) return null;
 
         int[] changes = new int[value + 1];
+        int[] step = new int[value + 1];
+        step[0] = -1;
         for (int i = 1; i <= value; i++) {
             changes[i] = Integer.MAX_VALUE;
             for (int j = 0; j < coins.length && coins[j] <= i; j++) {
-                if (i - coins[j] >= 0) {
-                    changes[i] = Math.min(changes[i], 1 + changes[i - coins[j]]);
+                if (i - coins[j] >= 0 && 1 + changes[i - coins[j]] < changes[i]) {
+                    changes[i] = 1 + changes[i - coins[j]];
+                    step[i] = j;
                 }
             }
         }
-        return changes[value];
+        List<Integer> solution = new ArrayList();
+        for (int i = value; i >= 0 && step[i] >= 0; i -= coins[step[i]])
+            solution.add(coins[step[i]]);
+        return solution;
     }
 
-
+    // Recursive top down approach
     public int makingChangeCombination(int[] coins, int value) {
         if (!precondition(coins, value)) return 0;
         int[][] cache = new int[value + 1][coins.length];
@@ -59,6 +68,11 @@ public class MakingChange {
         }
 
         return true;
+    }
+
+    public static void main(String[] args) {
+        MakingChange test = new MakingChange();
+        System.out.println(test.makingChange(new int[]{1,10,25}, 30));
     }
 
 }

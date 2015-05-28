@@ -51,7 +51,7 @@ public class DecodeWays {
     	
     }
 
-    public int numDecodings(String s) {
+    public int numDecodings2(String s) {
         if (s == null || s.length() < 1) {
             return 0;
         }
@@ -62,7 +62,7 @@ public class DecodeWays {
         cache[1] = chars[0] == '0' ? 0 : 1;
         for (int i = 2; i <= s.length(); i ++) {
             int code = getCode(chars[i-2], chars[i - 1]);
-            if (code > 10 && code <= 26 && code != 10 && code != 20) {
+            if (code > 10 && code <= 26 && code != 20) {
                 cache[i] = cache[i - 1] + cache[i - 2];
             } else if (code == 10 || code == 20) {
                 cache[i] = cache[i - 2];
@@ -73,7 +73,24 @@ public class DecodeWays {
         return cache[s.length()];
     }
 
+    public int numDecodings(String s) {
+        if (s == null || s.length() == 0)
+            return 0;
 
+        int cur = s.charAt(0) == '0' ? 0 : 1, prev = 1, prevprev = 0;
+        for(int i = 1; i < s.length(); i ++) {
+            prevprev = prev; prev = cur; cur = 0;
+            int code = getCode(s.charAt(i - 1), s.charAt(i));
+            if (code > 10 && code < 27 && code != 20) {
+                cur = prev + prevprev;
+            } else if (code == 10 || code == 20) {
+                cur = prevprev;
+            } else if (code % 10 != 0) {
+                cur = prev;
+            }
+        }
+        return cur;
+    }
 
     private int getCode(char c1, char c2) {
         return (c1 - '0') * 10 + c2 - '0';
@@ -81,6 +98,10 @@ public class DecodeWays {
 
     public static void main(String[] args) {
         DecodeWays test = new DecodeWays();
+
+        System.out.println(test.numDecodings("12120"));
+        System.out.println(test.numDecodings("100"));
+        System.out.println(test.numDecodings("1"));
         System.out.println(test.numDecodings("10"));
         System.out.println(test.numDecodings("27"));
         System.out.println(test.numDecodings("110"));

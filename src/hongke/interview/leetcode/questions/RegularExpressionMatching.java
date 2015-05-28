@@ -7,7 +7,7 @@ import java.util.IllegalFormatException;
  */
 public class RegularExpressionMatching {
 
-    public boolean isMatch(String s, String p) {
+    public boolean isMatch1(String s, String p) {
         if (s == null && p == null) {
             return true;
         } else if (s == null || p == null) {
@@ -112,9 +112,75 @@ public class RegularExpressionMatching {
         }
     }
 
+    public boolean isMatch2(String s, String p) {
+        if (p.length() == 0 && s.length() == 0) {
+            return true;
+        } else if(p.length() == 0 && s.length() != 0 || p.charAt(0) == '*') {
+            return false;
+        }
+
+        return isMatch(s.toCharArray(), p.toCharArray(), 0, 0);
+    }
+
+    private boolean isMatch(char[] s, char[] p, int i, int j) {
+        while (i < s.length || j < p.length) {
+            if (j < p.length - 1 && p[j + 1] == '*') {
+                char c = p[j];
+                j ++;
+                for (; j < p.length && p[j] == '*'; j ++);
+                while (i < s.length && (c == '.' || c == s[i])) {
+                    if (isMatch(s, p, i ++, j)) {
+                        return true;
+                    }
+                }
+            } else if (i < s.length && j < p.length && (s[i] == p[j] || p[j] == '.')) {
+                i ++;
+                j ++;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isMatch(String s, String p) {
+        if (s == null || p == null) return false;
+        if (p.length() == 0 && s.length() == 0) return true;
+        return match(s, 0, p, 0);
+    }
+
+    private boolean match(String s, int si, String p, int pi) {
+        if (charAt(p, pi) == '*') {
+            return false;
+        } else if (si == s.length() && pi == p.length()) {
+            return true;
+        } else if (charAt(p, pi + 1) == '*') {
+            char c = charAt(p, pi ++);
+            while (charAt(p, pi) == '*') pi ++;
+            boolean matched = match(s, si, p, pi);
+            while (si < s.length() && (c == charAt(s, si) || c == '.') && !matched) {
+                matched = match(s, ++ si, p, pi);
+            }
+            return matched;
+        } else if (si < s.length() && (charAt(s, si) == charAt(p, pi) || charAt(p, pi) == '.')) {
+            return match(s, si + 1, p, pi + 1);
+        } else {
+            return false;
+        }
+    }
+
+    char charAt(String s, int i) {
+        if (i >= s.length() || i < 0) {
+            return '\0';
+        } else {
+            return s.charAt(i);
+        }
+    }
+
     public static void main(String[] args) {
         RegularExpressionMatching matcher = new RegularExpressionMatching();
 
+        System.out.println(matcher.isMatch("aaca", "d*")); // false
         System.out.println(matcher.isMatch("aasdfasdfasdfasdfas", "aasdf.*asdf.*asdf.*asdf.*s")); // true
         System.out.println(matcher.isMatch("", ".")); // false
         System.out.println(matcher.isMatch("a", "ab*")); // true

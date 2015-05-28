@@ -7,7 +7,7 @@ import java.util.List;
  * Created by hongke on 8/23/14.
  */
 public class PermutationSequence {
-    public String getPermutation(int n, int k) {
+    public String getPermutation1(int n, int k) {
         if (n <= 1 || k <= 0) {
             return String.valueOf(n);
         }
@@ -36,8 +36,25 @@ public class PermutationSequence {
         return sb.toString();
     }
 
+    public String getPermutation(int n, int k) {
+        if (n <= 0 || k <= 0) return "";
+        List<Integer> digits = new ArrayList();
+        int total = 1;
+        for (int i = 1; digits.size() < n; total *= i, digits.add(i), i ++);
+        k = k - 1; // zero based.
+        StringBuilder seq = new StringBuilder();
+        while (!digits.isEmpty()) {
+            total = total / digits.size();
+            int d = digits.remove(k / total);//!! total cauld be zero at this time
+            seq.append(d);
+            k = k % total;
+        }
+        return seq.toString();
+    }
+
     public static void main (String[] args) {
         PermutationSequence test = new PermutationSequence();
+        System.out.println(test.getPermutation(1, 1));
         System.out.println(test.getPermutation(3, 0));
         System.out.println(test.getPermutation(3, 1));
         System.out.println(test.getPermutation(3, 2));

@@ -1,7 +1,9 @@
 package hongke.interview.leetcode.questions;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by hongke on 9/1/14.
@@ -122,9 +124,51 @@ public class MinimumWindowSubstring {
         return true;
     }
 
+    // This method return minimum substring which contains all characters found in string T;
+    public String minWindow2(String S, String T) {
+        if (S == null || T == null || S.length() == 0 || T.length() == 0) {
+            return "";
+        }
+
+        Set<Character> set = new HashSet<Character>();
+        for (char c : T.toCharArray())
+            set.add(c);
+        Map<Character, Integer> counts = new HashMap<Character, Integer>();
+        String result = null;
+        Integer start = 0, end = 0;
+        while (end < S.length()) {
+            char c = S.charAt(end);
+            if (set.contains(c)) {
+                int count1 = counts.containsKey(c) ? counts.get(c) : 0;
+                counts.put(c, count1 + 1);
+                while (counts.size() == set.size()) {
+                    char d = S.charAt(start);
+                    if (set.contains(d)) {
+                        int count2 = counts.get(d);
+                        if (count2 == 1) {
+                            counts.remove(d);
+                            if (result == null || end + 1 - start < result.length()) {
+                                result = S.substring(start, end + 1);
+                            }
+                        } else {
+                            counts.put(d, count2 - 1);
+                        }
+                    }
+                    start ++;
+                }
+
+            }
+            end ++;
+        }
+        return result == null ? "" : result;
+    }
+
+
+
     public static void main(String[] args) {
         MinimumWindowSubstring test = new MinimumWindowSubstring();
         System.out.println(test.minWindow("bba", "ab"));
         System.out.println(test.minWindow("bdab", "ab"));
+        System.out.println(test.minWindow2("a", "a"));
     }
 }

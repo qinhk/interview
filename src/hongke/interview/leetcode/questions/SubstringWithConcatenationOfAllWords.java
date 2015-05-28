@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class SubstringWithConcatenationOfAllWords {
 
-    public List<Integer> findSubstring(String S, String[] L) {
+    public List<Integer> findSubstring1(String S, String[] L) {
         if (S == null || S.length() == 0 || L == null || L.length == 0) {
             return Arrays.asList(new Integer[] {0, 0});
         }
@@ -44,6 +44,45 @@ public class SubstringWithConcatenationOfAllWords {
                 i += wordLength;
                 if (dict.size() == 0 && i > S.length() - wordLength) {
                     result.add(begin);
+                }
+            }
+        }
+        return result;
+    }
+
+    public List<Integer> findSubstring(String S, String[] L) {
+        if (S == null || S.length() == 0 || L == null || L.length == 0) {
+            return Arrays.asList(new Integer[] {0, 0});
+        }
+
+        int wordLength = L[0].length();
+        Map<String, Integer> counts = new HashMap<String, Integer>();
+        for (int i = 0; i < L.length; i++) {
+            if (!counts.containsKey(L[i])) {
+                counts.put(L[i], 0);
+            }
+            counts.put(L[i], counts.get(L[i]) + 1);
+        }
+
+        List<Integer> result = new ArrayList<Integer>();
+        Map<String, Integer> occurrence = new HashMap<String, Integer>();
+        int wc = 0;
+        for (int i = 0; i <= S.length() - L.length * wordLength; i++, wc = 0) {
+            int j = i;
+            occurrence.clear();
+            while (wc < L.length && counts.containsKey(S.substring(j, j + wordLength))) {
+                String w = S.substring(j, j + wordLength);
+                if (!occurrence.containsKey(w) || occurrence.get(w) < counts.get(w)) {
+                    if (!occurrence.containsKey(w))
+                        occurrence.put(w, 0);
+                    occurrence.put(w, occurrence.get(w) + 1);
+                    wc ++;
+                    j += wordLength;
+                    if (wc == L.length) {
+                        result.add(i);
+                    }
+                } else {
+                    break;
                 }
             }
         }

@@ -6,6 +6,27 @@ import java.util.*;
  * Created by hongke on 8/20/14.
  */
 public class Permutation {
+
+    public static ArrayList<ArrayList<Integer>> permuteUnique(int[] num) {
+        ArrayList<ArrayList<Integer>> returnList = new ArrayList<ArrayList<Integer>>();
+        returnList.add(new ArrayList<Integer>());
+
+        for (int i = 0; i < num.length; i++) {
+            Set<ArrayList<Integer>> currentSet = new HashSet<ArrayList<Integer>>();
+            for (List<Integer> l : returnList) {
+                for (int j = 0; j < l.size() + 1; j++) {
+                    l.add(j, num[i]);
+                    ArrayList<Integer> T = new ArrayList<Integer>(l);
+                    l.remove(j);
+                    currentSet.add(T);
+                }
+            }
+            returnList = new ArrayList<ArrayList<Integer>>(currentSet);
+        }
+
+        return returnList;
+    }
+
     public List<List<Integer>> permute(int[] num) {
 
         if (num == null) {
@@ -44,7 +65,7 @@ public class Permutation {
         System.out.println(test.permute2(new int[] {1}));
         System.out.println(test.permute2(new int[] {1, 2}));
         System.out.println(test.permute2(new int[] {1, 2, 3}));
-        System.out.println(test.permute2(new int[] {1, 2, 3, 3, 4}));
+        System.out.println(test.permuteUnique(new int[] {1, 2, 3, 3, 4}));
 
     }
 

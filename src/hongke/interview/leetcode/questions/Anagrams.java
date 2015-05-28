@@ -1,9 +1,6 @@
 package hongke.interview.leetcode.questions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by hongke on 4/6/14.
@@ -45,5 +42,35 @@ public class Anagrams {
         String[] test2 = new String[]{"abc", "bca", "cab", "cba"};
         System.out.println(test.anagrams(test2));
 
+    }
+
+
+    public List<String> anagrams1(String[] strs) {
+        List<String> result = new ArrayList<String>();
+        if (strs == null || strs.length == 0) return result;
+        Map<String, List<String>> anagrams = new HashMap<String, List<String>>();
+        for (String s : strs) {
+            String key = getKey(s);
+            if (!anagrams.containsKey(key)) {
+                anagrams.put(key, new ArrayList<String>());
+            }
+            anagrams.get(key).add(s);
+        }
+        for (List<String> l : anagrams.values()) {
+            if (l.size() > 1) {
+                result.addAll(l);
+            }
+        }
+        return result;
+    }
+
+    private String getKey(String s) {
+        char[] chars = s.toCharArray();
+        Arrays.sort(chars);
+        StringBuilder sb = new StringBuilder();
+        for(char c : chars) {
+            sb.append(c);
+        }
+        return sb.toString();
     }
 }

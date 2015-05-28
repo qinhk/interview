@@ -8,7 +8,7 @@ import java.util.List;
  * Created by hongke on 8/24/14.
  */
 public class PascalsTriangleII {
-    public List<Integer> getRow(int rowIndex) {
+    public List<Integer> getRow1(int rowIndex) {
         List<Integer> result = new ArrayList<Integer>();
         if (rowIndex < 0) {
             return result;
@@ -31,6 +31,20 @@ public class PascalsTriangleII {
             result = result.multiply(BigInteger.valueOf(--i));
         }
 
+        return result;
+    }
+
+    public List<Integer> getRow(int rowIndex) {
+        List<Integer> result = new ArrayList<Integer>();
+        result.add(1);
+        for (int i = 1; i <= rowIndex; i ++) {
+            result.add(0);
+            for (int j = i; j >= 0; j --) {
+                int left = j - 1 >= 0 ? result.get(j - 1) : 0;
+                int right = j < i ? result.get(j) : 0;
+                result.set(j, left + right);
+            }
+        }
         return result;
     }
 

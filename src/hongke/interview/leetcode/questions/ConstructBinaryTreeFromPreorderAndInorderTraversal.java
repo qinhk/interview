@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Created by hongke on 9/21/14.
  */
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
+    public TreeNode buildTree1(int[] preorder, int[] inorder) {
         if (inorder == null || inorder == null || inorder.length == 0
             || inorder.length == 0 || inorder.length != inorder.length) {
             return null;
@@ -33,9 +33,31 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
         return node;
     }
 
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0)
+            return null;
+
+        return construct(preorder, 0, preorder.length - 1,  inorder, 0, inorder.length - 1);
+    }
+
+    private TreeNode construct(int[] preorder, int ps, int pe, int[] inorder, int is, int ie) {
+        if (is > ie || ps > pe)
+            return null;
+        int mid = preorder[ps], i = 0;
+        for (; i + is <= ie && inorder[i + is] != mid; i ++);
+        TreeNode node = new TreeNode(mid);
+        node.left = construct(preorder, ps + 1, ps + i, inorder, is, is + i - 1);
+        node.right = construct(preorder, ps + i + 1, pe, inorder, is + i + 1, ie);
+        return node;
+    }
+
     public static void main(String[] args) {
         ConstructBinaryTreeFromPreorderAndInorderTraversal test = new ConstructBinaryTreeFromPreorderAndInorderTraversal();
         int[] inorder, preorder;
+
+        inorder = new int[] {1, 2};
+        preorder = new int[] {1, 2};
+        TreeNode.printPretty(test.buildTree(preorder, inorder));
 
         inorder = new int[] {2, 3, 1};
         preorder = new int[] {1, 2, 3};

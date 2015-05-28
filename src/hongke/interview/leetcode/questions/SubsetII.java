@@ -55,4 +55,33 @@ public class SubsetII {
         List<List<Integer>> sortedResults = new ArrayList<List<Integer>>(results);
         return sortedResults;
     }
+
+
+    public List<List<Integer>> subsetsWithDup(int[] num) {
+        List<List<Integer>> results = new ArrayList<List<Integer>>();
+        if (num == null || num.length == 0) {
+            return results;
+        }
+
+        Arrays.sort(num);
+        findSubsets(num, 0, new Stack<Integer>(), results);
+        return results;
+    }
+
+    private void findSubsets(int[] num, int start, Stack<Integer> stack, List<List<Integer>> results) {
+        if (start == num.length) return;
+        Integer prev = null;
+        for (int i = start; i < num.length; i ++) {
+            if (prev != null && prev == num[i]) { continue; }
+            stack.push(num[i]);
+            results.add(new ArrayList<Integer>(stack));
+            findSubsets(num, i + 1, stack, results);
+            prev = stack.pop();
+        }
+    }
+
+    public static void main(String[] args) {
+        SubsetII test = new SubsetII();
+        test.subsetsWithDup(new int[]{3, 9});
+    }
 }

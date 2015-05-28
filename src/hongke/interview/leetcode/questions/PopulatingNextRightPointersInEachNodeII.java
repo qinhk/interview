@@ -2,14 +2,31 @@ package hongke.interview.leetcode.questions;
 
 import hongke.interview.leetcode.common.TreeLinkNode;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Created by hongke on 8/18/14.
  */
 public class PopulatingNextRightPointersInEachNodeII {
+
+    public int singleNumber(int[] A) {
+        if (A == null || A.length == 0)
+            return 0;
+
+        Map<Integer, int[]> count = new HashMap<Integer, int[]>();
+        for (Integer i : A) {
+            if (!count.containsKey(i)) {
+                count.put(i, new int[]{0});
+            }
+            count.get(i)[0] ++;
+        }
+//        for (Map.Entry<Integer, Integer[]> e : count.entrySet()) {
+//            if (e.getValue()[0] < 3) {
+//                return e.getKey();
+//            }
+//        }
+        return 0;
+    }
     public void connect1(TreeLinkNode root) {
         if (root == null) {
             return;
@@ -34,7 +51,7 @@ public class PopulatingNextRightPointersInEachNodeII {
         }
     }
 
-    public void connect(TreeLinkNode root) {
+    public void connect2(TreeLinkNode root) {
         if (root == null) {
             return;
         }
@@ -65,6 +82,30 @@ public class PopulatingNextRightPointersInEachNodeII {
         }
     }
 
+    public void connect(TreeLinkNode root) {
+        while (root != null) {
+            TreeLinkNode dummy = new TreeLinkNode(0), head = dummy;
+            while(root != null) {
+                if (root != null && root.left != null) {
+                    head.next = root.left;
+                    head = head.next;
+                }
+                if (root != null && root.right != null) {
+                    head.next = root.right;
+                    head = head.next;
+                }
+                root = forward(root.next);
+            }
+            root = dummy.next;
+        }
+    }
+
+    private TreeLinkNode forward(TreeLinkNode h) {
+        while (h != null && h.left == null && h.right == null)
+            h = h.next;
+        return h;
+    }
+
     public static void main(String[] args) {
         PopulatingNextRightPointersInEachNodeII test = new PopulatingNextRightPointersInEachNodeII();
         TreeLinkNode input;
@@ -85,7 +126,7 @@ public class PopulatingNextRightPointersInEachNodeII {
         input.right.right.left = new TreeLinkNode(14);
         input.right.right.right = new TreeLinkNode(15);
 
-        test.connect(input);
+        test.connect1(input);
         TreeLinkNode.printPretty(input);
     }
 

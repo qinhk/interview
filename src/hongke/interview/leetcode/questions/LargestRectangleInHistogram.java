@@ -6,7 +6,7 @@ import java.util.Stack;
  * Created by hongke on 5/7/14.
  */
 public class LargestRectangleInHistogram {
-    public int largestRectangleArea(int[] height) {
+    public int largestRectangleArea2(int[] height) {
         if (height == null || height.length == 0) {
             return 0;
         }
@@ -59,6 +59,26 @@ public class LargestRectangleInHistogram {
             int height = heights[stack.pop()];
             int left = stack.isEmpty() ? 0 : stack.peek() + 1;
             max = Math.max(max, height * (right - left));
+        }
+        return max;
+    }
+
+    public int largestRectangleArea(int[] bars) {
+        if (bars == null || bars.length == 0)
+            return 0;
+
+        Stack<Integer> height = new Stack<Integer>();
+        int max = 0, len = bars.length, i = 0;
+        while (i <= len) {
+            if (i < len && (height.size() == 0 || bars[height.peek()] <= bars[i])) {
+                height.push(i ++);
+            } else if (height.size() > 0 && (i == len || bars[height.peek()] > bars[i])) {
+                int h = bars[height.pop()], r = i;
+                int l = height.size() == 0 ? 0 : height.peek() + 1;
+                max = Math.max(max, (r - l) * h);
+            } else {
+                i ++;
+            }
         }
         return max;
     }

@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class RecoverBinaryTree {
 
-    public void recoverTree(TreeNode root) {
+    public void recoverTree1(TreeNode root) {
 
         if (root == null) {
             return;
@@ -54,9 +54,38 @@ public class RecoverBinaryTree {
         return false;
     }
 
+    public void recoverTree(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        Deque<TreeNode> swapped = new ArrayDeque<TreeNode>();
+        TreeNode prev = null;
+        while (root != null || !stack.isEmpty()) {
+            if (root != null) {
+                stack.push(root);
+                root = root.left;
+            } else {
+                TreeNode node = stack.pop();
+                if (prev != null && node.val < prev.val) {
+                    if (swapped.isEmpty()) {
+                        swapped.add(prev);
+                    }
+                    swapped.add(node);
+                }
+                prev = node;
+                root = node.right;
+            }
+        }
+        TreeNode n1 = swapped.removeFirst(), n2 = swapped.removeLast();
+        int t = n1.val; n1.val = n2.val; n2.val = t;
+    }
+
     public static void main(String[] args) {
         RecoverBinaryTree test = new RecoverBinaryTree();
         TreeNode input;
+
+        input = new TreeNode(2);
+        input.left = new TreeNode(1);
+        test.recoverTree(input);
+        TreeNode.printPretty(input);
 
         input = new TreeNode(0);
         input.left = new TreeNode(1);

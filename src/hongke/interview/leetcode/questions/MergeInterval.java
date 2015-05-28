@@ -8,7 +8,7 @@ import java.util.*;
  * Created by hongke on 9/4/14.
  */
 public class MergeInterval {
-    public List<Interval> merge(List<Interval> intervals) {
+    public List<Interval> merge1(List<Interval> intervals) {
         List<Interval> merged = new ArrayList<Interval>();
         if (intervals == null || intervals.isEmpty()) {
             return merged;
@@ -40,6 +40,35 @@ public class MergeInterval {
         if (prev != null) {
             merged.add(prev);
         }
+        return merged;
+    }
+
+
+    private final class IntervalComparator implements Comparator<Interval> {
+        public int compare(Interval  a, Interval b) {
+            return Integer.compare(a.start, b.start);
+        }
+    }
+
+    public List<Interval> merge(List<Interval> intervals) {
+        List<Interval> merged = new ArrayList<Interval>();
+        if (intervals == null || intervals.size() == 0)
+            return merged;
+
+        PriorityQueue<Interval> sorted = new PriorityQueue<Interval>(intervals.size(), new IntervalComparator());
+        sorted.addAll(intervals);
+        Interval pre = sorted.poll();
+        while (!sorted.isEmpty()) {
+            Interval interval = sorted.poll();
+            if (pre.end >= interval.start) {
+                pre.end = Math.max(pre.end, interval.end);
+            } else {
+                merged.add(pre);
+                pre = interval;
+            }
+        }
+        if (pre != null)
+            merged.add(pre);
         return merged;
     }
 
